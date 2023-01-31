@@ -3,14 +3,14 @@ package sh.radical.order.models;
 import java.lang.Override;
 import java.util.UUID;
 
-import com.querydsl.core.annotations.QueryEntity;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 import org.springframework.data.annotation.Id;
+import org.springframework.data.mongodb.core.mapping.Document;
 
 @NoArgsConstructor
-@QueryEntity
+@Document
 public class Order {
 
   @Getter

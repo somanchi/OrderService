@@ -11,6 +11,15 @@
       <entry name="!?*.groovy" />
       <entry name="!?*.java" />
     </wildcardResourcePatterns>
+    <annotationProcessing>
+      <profile name="Gradle Imported" enabled="true">
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="false">
+          <entry name="$PROJECT_DIR$/../.gradle/caches/modules-2/files-2.1/org.projectlombok/lombok/1.18.22/9c08ea24c6eb714e2d6170e8122c069a0ba9aacf/lombok-1.18.22.jar" />
+        </processorPath>
+        <module name="order.main" />
+      </profile>
+    </annotationProcessing>
     <bytecodeTargetLevel target="11" />
   </component>
   <component name="CopyrightManager" default="" />
@@ -18,6 +27,9 @@
     <option name="SKIP_IMPORT_STATEMENTS" value="false" />
   </component>
   <component name="ExternalStorageConfigurationManager" enabled="true" />
+  <component name="FrameworkDetectionExcludesConfiguration">
+    <file type="web" url="file://$PROJECT_DIR$" />
+  </component>
   <component name="GradleSettings">
     <option name="linkedExternalProjectsSettings">
       <GradleProjectSettings>
@@ -45,21 +57,7 @@
     <version value="1.0" />
   </component>
   <component name="JavadocGenerationManager">
-    <option name="OUTPUT_DIRECTORY" />
-    <option name="OPTION_SCOPE" value="protected" />
-    <option name="OPTION_HIERARCHY" value="true" />
-    <option name="OPTION_NAVIGATOR" value="true" />
-    <option name="OPTION_INDEX" value="true" />
-    <option name="OPTION_SEPARATE_INDEX" value="true" />
-    <option name="OPTION_DOCUMENT_TAG_USE" value="false" />
-    <option name="OPTION_DOCUMENT_TAG_AUTHOR" value="false" />
-    <option name="OPTION_DOCUMENT_TAG_VERSION" value="false" />
-    <option name="OPTION_DOCUMENT_TAG_DEPRECATED" value="true" />
-    <option name="OPTION_DEPRECATED_LIST" value="true" />
     <option name="OTHER_OPTIONS" value="" />
-    <option name="HEAP_SIZE" />
-    <option name="LOCALE" />
-    <option name="OPEN_IN_BROWSER" value="true" />
   </component>
   <component name="ProjectCodeStyleConfiguration">
     <option name="PREFERRED_PROJECT_CODE_STYLE" value="Default" />
@@ -86,14 +84,931 @@
   </component>
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/OrderService.iml" filepath="$PROJECT_DIR$/OrderService.iml" />
+      <module fileurl="file://$PROJECT_DIR$/order.iml" filepath="$PROJECT_DIR$/order.iml" />
+      <module fileurl="file://$PROJECT_DIR$/order.main.iml" filepath="$PROJECT_DIR$/order.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/order.querydsl.iml" filepath="$PROJECT_DIR$/order.querydsl.iml" />
+      <module fileurl="file://$PROJECT_DIR$/order.test.iml" filepath="$PROJECT_DIR$/order.test.iml" />
     </modules>
   </component>
   <component name="ProjectRootManager" version="2" languageLevel="JDK_11" project-jdk-name="17" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/out" />
   </component>
+  <component name="RemoteRepositoriesConfiguration">
+    <remote-repository>
+      <option name="id" value="central" />
+      <option name="name" value="Maven Central repository" />
+      <option name="url" value="https://repo1.maven.org/maven2" />
+    </remote-repository>
+    <remote-repository>
+      <option name="id" value="jboss.community" />
+      <option name="name" value="JBoss Community repository" />
+      <option name="url" value="https://repository.jboss.org/nexus/content/repositories/public/" />
+    </remote-repository>
+    <remote-repository>
+      <option name="id" value="MavenRepo" />
+      <option name="name" value="MavenRepo" />
+      <option name="url" value="https://repo.maven.apache.org/maven2/" />
+    </remote-repository>
+  </component>
   <component name="SvnBranchConfigurationManager">
     <option name="mySupportsUserInfoFilter" value="true" />
+  </component>
+  <component name="libraryTable">
+    <library name="Gradle: ch.qos.logback:logback-classic:1.2.7">
+      <CLASSES>
+        <root url="jar://$PROJECT_DIR$/../.gradle/caches/modules-2/files-2.1/ch.qos.logback/logback-classic/1.2.7/3e89a85545181f1a3a9efc9516ca92658502505b/logback-classic-1.2.7.jar!/" />
+      </CLASSES>
+      <JAVADOC />
+      <SOURCES>
+        <root url="jar://$PROJECT_DIR$/../.gradle/caches/modules-2/files-2.1/ch.qos.logback/logback-classic/1.2.7/3bad21efb8d5c9414a2cdd123f687d5697638aa1/logback-classic-1.2.7-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Gradle: ch.qos.logback:logback-core:1.2.7">
+      <CLASSES>
+        <root url="jar://$PROJECT_DIR$/../.gradle/caches/modules-2/files-2.1/ch.qos.logback/logback-core/1.2.7/31f7db3c4277023742268c0c3f9b65f1f297e49a/logback-core-1.2.7.jar!/" />
+      </CLASSES>
+      <JAVADOC />
+      <SOURCES>
+        <root url="jar://$PROJECT_DIR$/../.gradle/caches/modules-2/files-2.1/ch.qos.logback/logback-core/1.2.7/2716c720b4d14ee019ec276658b5897ca9a9c88d/logback-core-1.2.7-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Gradle: com.fasterxml.jackson.core:jackson-annotations:2.13.0">
+      <CLASSES>
+        <root url="jar://$PROJECT_DIR$/../.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.core/jackson-annotations/2.13.0/15be89db6609bd6fda3dc309bacf0318a312c03f/jackson-annotations-2.13.0.jar!/" />
+      </CLASSES>
+      <JAVADOC />
+      <SOURCES>
+        <root url="jar://$PROJECT_DIR$/../.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.core/jackson-annotations/2.13.0/1c78424885821d9d76dea840373e4c6ec3194bfb/jackson-annotations-2.13.0-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Gradle: com.fasterxml.jackson.core:jackson-core:2.13.0">
+      <ANNOTATIONS>
+        <root url="jar://$MAVEN_REPOSITORY$/org/jetbrains/externalAnnotations/com/fasterxml/jackson/core/jackson-core/2.9.6-an1/jackson-core-2.9.6-an1-annotations.zip!/" />
+      </ANNOTATIONS>
+      <CLASSES>
+        <root url="jar://$PROJECT_DIR$/../.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.core/jackson-core/2.13.0/e957ec5442966e69cef543927bdc80e5426968bb/jackson-core-2.13.0.jar!/" />
+      </CLASSES>
+      <JAVADOC />
+      <SOURCES>
+        <root url="jar://$PROJECT_DIR$/../.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.core/jackson-core/2.13.0/26783a31fe3e4b63f2799dda9266747d0621ffc6/jackson-core-2.13.0-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Gradle: com.fasterxml.jackson.core:jackson-databind:2.13.0">
+      <ANNOTATIONS>
+        <root url="jar://$MAVEN_REPOSITORY$/org/jetbrains/externalAnnotations/com/fasterxml/jackson/core/jackson-databind/2.9.6-an1/jackson-databind-2.9.6-an1-annotations.zip!/" />
+      </ANNOTATIONS>
+      <CLASSES>
+        <root url="jar://$PROJECT_DIR$/../.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.core/jackson-databind/2.13.0/889672a1721d6d85b2834fcd29d3fda92c8c8891/jackson-databind-2.13.0.jar!/" />
+      </CLASSES>
+      <JAVADOC />
+      <SOURCES>
+        <root url="jar://$PROJECT_DIR$/../.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.core/jackson-databind/2.13.0/531874ca0491bcdee13bc6a4f0fa201d8067366c/jackson-databind-2.13.0-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Gradle: com.fasterxml.jackson.dataformat:jackson-dataformat-yaml:2.13.0">
+      <CLASSES>
+        <root url="jar://$PROJECT_DIR$/../.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.dataformat/jackson-dataformat-yaml/2.13.0/90c7265058f7b8b805abde4da1e2e59febb30c7d/jackson-dataformat-yaml-2.13.0.jar!/" />
+      </CLASSES>
+      <JAVADOC />
+      <SOURCES>
+        <root url="jar://$PROJECT_DIR$/../.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.dataformat/jackson-dataformat-yaml/2.13.0/e6e434aaf367685fc2456ea3ddb58da21ff17ace/jackson-dataformat-yaml-2.13.0-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Gradle: com.fasterxml.jackson.datatype:jackson-datatype-jdk8:2.13.0">
+      <CLASSES>
+        <root url="jar://$PROJECT_DIR$/../.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.datatype/jackson-datatype-jdk8/2.13.0/6d82a502e03f61d6dc6e47e5f7d6168141419c92/jackson-datatype-jdk8-2.13.0.jar!/" />
+      </CLASSES>
+      <JAVADOC />
+      <SOURCES>
+        <root url="jar://$PROJECT_DIR$/../.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.datatype/jackson-datatype-jdk8/2.13.0/b4b164d5dc0ea55dea8fa965ea26d1a493f6c0cd/jackson-datatype-jdk8-2.13.0-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Gradle: com.fasterxml.jackson.datatype:jackson-datatype-jsr310:2.13.0">
+      <CLASSES>
+        <root url="jar://$PROJECT_DIR$/../.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.datatype/jackson-datatype-jsr310/2.13.0/4c143877fc733befe6189151c8b95d84acd06941/jackson-datatype-jsr310-2.13.0.jar!/" />
+      </CLASSES>
+      <JAVADOC />
+      <SOURCES>
+        <root url="jar://$PROJECT_DIR$/../.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.datatype/jackson-datatype-jsr310/2.13.0/61667950f4b19230f0ad83fef77eb7781e235d82/jackson-datatype-jsr310-2.13.0-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Gradle: com.fasterxml.jackson.module:jackson-module-parameter-names:2.13.0">
+      <CLASSES>
+        <root url="jar://$PROJECT_DIR$/../.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.module/jackson-module-parameter-names/2.13.0/62a5e3b6cc5aacc0ff2354053f3cc2a7821dfa9/jackson-module-parameter-names-2.13.0.jar!/" />
+      </CLASSES>
+      <JAVADOC />
+      <SOURCES>
+        <root url="jar://$PROJECT_DIR$/../.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.module/jackson-module-parameter-names/2.13.0/250fd17d2ca4e878354f0663994646c2d0978b6/jackson-module-parameter-names-2.13.0-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Gradle: com.fasterxml:classmate:1.5.1">
+      <CLASSES>
+        <root url="jar://$PROJECT_DIR$/../.gradle/caches/modules-2/files-2.1/com.fasterxml/classmate/1.5.1/3fe0bed568c62df5e89f4f174c101eab25345b6c/classmate-1.5.1.jar!/" />
+      </CLASSES>
+      <JAVADOC />
+      <SOURCES>
+        <root url="jar://$PROJECT_DIR$/../.gradle/caches/modules-2/files-2.1/com.fasterxml/classmate/1.5.1/504edac38ff03cc5ce1d0391abb1416ffad58a99/classmate-1.5.1-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Gradle: com.jayway.jsonpath:json-path:2.6.0">
+      <CLASSES>
+        <root url="jar://$PROJECT_DIR$/../.gradle/caches/modules-2/files-2.1/com.jayway.jsonpath/json-path/2.6.0/67f565b424f7903a12d4f5b9361b11462ecacdac/json-path-2.6.0.jar!/" />
+      </CLASSES>
+      <JAVADOC />
+      <SOURCES>
+        <root url="jar://$PROJECT_DIR$/../.gradle/caches/modules-2/files-2.1/com.jayway.jsonpath/json-path/2.6.0/323b2e72e7fea07dea282c1ec808531e525bb790/json-path-2.6.0-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Gradle: com.mysema.commons:mysema-commons-lang:0.2.4">
+      <CLASSES>
+        <root url="jar://$PROJECT_DIR$/../.gradle/caches/modules-2/files-2.1/com.mysema.commons/mysema-commons-lang/0.2.4/d09c8489d54251a6c22fbce804bdd4a070557317/mysema-commons-lang-0.2.4.jar!/" />
+      </CLASSES>
+      <JAVADOC />
+      <SOURCES>
+        <root url="jar://$PROJECT_DIR$/../.gradle/caches/modules-2/files-2.1/com.mysema.commons/mysema-commons-lang/0.2.4/a2e4c718987af95c88ebfd37c18f2aad55712fdc/mysema-commons-lang-0.2.4-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Gradle: com.querydsl:codegen-utils:5.0.0">
+      <CLASSES>
+        <root url="jar://$PROJECT_DIR$/../.gradle/caches/modules-2/files-2.1/com.querydsl/codegen-utils/5.0.0/ff8a2ebbc3a317715de0ce2856c2024534d18a1a/codegen-utils-5.0.0.jar!/" />
+      </CLASSES>
+      <JAVADOC />
+      <SOURCES>
+        <root url="jar://$PROJECT_DIR$/../.gradle/caches/modules-2/files-2.1/com.querydsl/codegen-utils/5.0.0/9ac748d31e4452027df2fcfa875c24b324827a24/codegen-utils-5.0.0-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Gradle: com.querydsl:querydsl-apt:5.0.0">
+      <CLASSES>
+        <root url="jar://$PROJECT_DIR$/../.gradle/caches/modules-2/files-2.1/com.querydsl/querydsl-apt/5.0.0/fa5554c395bdcbe9846242824857a82874ad3223/querydsl-apt-5.0.0.jar!/" />
+      </CLASSES>
+      <JAVADOC />
+      <SOURCES>
+        <root url="jar://$PROJECT_DIR$/../.gradle/caches/modules-2/files-2.1/com.querydsl/querydsl-apt/5.0.0/9802e3dabe9823d5ae1e01729f79640bf98c1cc3/querydsl-apt-5.0.0-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Gradle: com.querydsl:querydsl-codegen:5.0.0">
+      <CLASSES>
+        <root url="jar://$PROJECT_DIR$/../.gradle/caches/modules-2/files-2.1/com.querydsl/querydsl-codegen/5.0.0/d690e92300f528e4161307b286f76aeaf348e2fb/querydsl-codegen-5.0.0.jar!/" />
+      </CLASSES>
+      <JAVADOC />
+      <SOURCES>
+        <root url="jar://$PROJECT_DIR$/../.gradle/caches/modules-2/files-2.1/com.querydsl/querydsl-codegen/5.0.0/7ef7448889593c1af93848ef3f298daf6e74e66a/querydsl-codegen-5.0.0-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Gradle: com.querydsl:querydsl-core:5.0.0">
+      <CLASSES>
+        <root url="jar://$PROJECT_DIR$/../.gradle/caches/modules-2/files-2.1/com.querydsl/querydsl-core/5.0.0/7a469f78b7a89bae429f17766fb92687d0ab9e5b/querydsl-core-5.0.0.jar!/" />
+      </CLASSES>
+      <JAVADOC />
+      <SOURCES>
+        <root url="jar://$PROJECT_DIR$/../.gradle/caches/modules-2/files-2.1/com.querydsl/querydsl-core/5.0.0/f768407377750c5de288bea9881a6e1c80b2c22c/querydsl-core-5.0.0-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Gradle: com.querydsl:querydsl-mongodb:5.0.0">
+      <CLASSES>
+        <root url="jar://$PROJECT_DIR$/../.gradle/caches/modules-2/files-2.1/com.querydsl/querydsl-mongodb/5.0.0/a0db9996704df2969e91bdc7d08fa4c552480a3/querydsl-mongodb-5.0.0.jar!/" />
+      </CLASSES>
+      <JAVADOC />
+      <SOURCES>
+        <root url="jar://$PROJECT_DIR$/../.gradle/caches/modules-2/files-2.1/com.querydsl/querydsl-mongodb/5.0.0/2ffe95d7337cb142412ddb440cb0b83f080b9f2/querydsl-mongodb-5.0.0-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Gradle: com.vaadin.external.google:android-json:0.0.20131108.vaadin1">
+      <CLASSES>
+        <root url="jar://$PROJECT_DIR$/../.gradle/caches/modules-2/files-2.1/com.vaadin.external.google/android-json/0.0.20131108.vaadin1/fa26d351fe62a6a17f5cda1287c1c6110dec413f/android-json-0.0.20131108.vaadin1.jar!/" />
+      </CLASSES>
+      <JAVADOC />
+      <SOURCES>
+        <root url="jar://$PROJECT_DIR$/../.gradle/caches/modules-2/files-2.1/com.vaadin.external.google/android-json/0.0.20131108.vaadin1/bf42d7e47a3228513b626dd7d37ac6f072aeca4f/android-json-0.0.20131108.vaadin1-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Gradle: io.github.classgraph:classgraph:4.8.138">
+      <CLASSES>
+        <root url="jar://$PROJECT_DIR$/../.gradle/caches/modules-2/files-2.1/io.github.classgraph/classgraph/4.8.138/af08df0ad62de2f4c686757a9a52ca2a8c2ea28c/classgraph-4.8.138.jar!/" />
+      </CLASSES>
+      <JAVADOC />
+      <SOURCES>
+        <root url="jar://$PROJECT_DIR$/../.gradle/caches/modules-2/files-2.1/io.github.classgraph/classgraph/4.8.138/6141d28a161e8925c5bf11b00cce7043a95e6dd6/classgraph-4.8.138-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Gradle: io.micrometer:micrometer-core:1.8.0">
+      <CLASSES>
+        <root url="jar://$PROJECT_DIR$/../.gradle/caches/modules-2/files-2.1/io.micrometer/micrometer-core/1.8.0/49915be901db3cd6a192803779f4e18c0880676b/micrometer-core-1.8.0.jar!/" />
+      </CLASSES>
+      <JAVADOC />
+      <SOURCES>
+        <root url="jar://$PROJECT_DIR$/../.gradle/caches/modules-2/files-2.1/io.micrometer/micrometer-core/1.8.0/6d5c477f5d7f8f2604a39b35079923e92345f6c5/micrometer-core-1.8.0-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Gradle: io.swagger.core.v3:swagger-annotations:2.1.12">
+      <CLASSES>
+        <root url="jar://$PROJECT_DIR$/../.gradle/caches/modules-2/files-2.1/io.swagger.core.v3/swagger-annotations/2.1.12/738d48e059af0ae009521430873885f327583913/swagger-annotations-2.1.12.jar!/" />
+      </CLASSES>
+      <JAVADOC />
+      <SOURCES>
+        <root url="jar://$PROJECT_DIR$/../.gradle/caches/modules-2/files-2.1/io.swagger.core.v3/swagger-annotations/2.1.12/7a2783c614ce1794207c8131d7f23b8fd5ee22eb/swagger-annotations-2.1.12-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Gradle: io.swagger.core.v3:swagger-core:2.1.12">
+      <CLASSES>
+        <root url="jar://$PROJECT_DIR$/../.gradle/caches/modules-2/files-2.1/io.swagger.core.v3/swagger-core/2.1.12/be6a8bca5bbfe86dd162018a00d1e4f6721016b9/swagger-core-2.1.12.jar!/" />
+      </CLASSES>
+      <JAVADOC />
+      <SOURCES>
+        <root url="jar://$PROJECT_DIR$/../.gradle/caches/modules-2/files-2.1/io.swagger.core.v3/swagger-core/2.1.12/7e4f24543f40b3e4867d6a83c9f5e0a59d94ba3a/swagger-core-2.1.12-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Gradle: io.swagger.core.v3:swagger-models:2.1.12">
+      <CLASSES>
+        <root url="jar://$PROJECT_DIR$/../.gradle/caches/modules-2/files-2.1/io.swagger.core.v3/swagger-models/2.1.12/57605b99a82802cc775ab5ee57dc2199a8591b3c/swagger-models-2.1.12.jar!/" />
+      </CLASSES>
+      <JAVADOC />
+      <SOURCES>
+        <root url="jar://$PROJECT_DIR$/../.gradle/caches/modules-2/files-2.1/io.swagger.core.v3/swagger-models/2.1.12/87f516b2c66e1b265c4478f9bc7e45b99869d7fd/swagger-models-2.1.12-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Gradle: jakarta.activation:jakarta.activation-api:1.2.2">
+      <CLASSES>
+        <root url="jar://$PROJECT_DIR$/../.gradle/caches/modules-2/files-2.1/jakarta.activation/jakarta.activation-api/1.2.2/99f53adba383cb1bf7c3862844488574b559621f/jakarta.activation-api-1.2.2.jar!/" />
+      </CLASSES>
+      <JAVADOC />
+      <SOURCES>
+        <root url="jar://$PROJECT_DIR$/../.gradle/caches/modules-2/files-2.1/jakarta.activation/jakarta.activation-api/1.2.2/c45b5962230be8a5f93759203870c98917bb8b31/jakarta.activation-api-1.2.2-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Gradle: jakarta.annotation:jakarta.annotation-api:1.3.5">
+      <CLASSES>
+        <root url="jar://$PROJECT_DIR$/../.gradle/caches/modules-2/files-2.1/jakarta.annotation/jakarta.annotation-api/1.3.5/59eb84ee0d616332ff44aba065f3888cf002cd2d/jakarta.annotation-api-1.3.5.jar!/" />
+      </CLASSES>
+      <JAVADOC />
+      <SOURCES>
+        <root url="jar://$PROJECT_DIR$/../.gradle/caches/modules-2/files-2.1/jakarta.annotation/jakarta.annotation-api/1.3.5/1ad35f11d17abb52426bfe15ea7b4c583795012/jakarta.annotation-api-1.3.5-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Gradle: jakarta.validation:jakarta.validation-api:2.0.2">
+      <CLASSES>
+        <root url="jar://$PROJECT_DIR$/../.gradle/caches/modules-2/files-2.1/jakarta.validation/jakarta.validation-api/2.0.2/5eacc6522521f7eacb081f95cee1e231648461e7/jakarta.validation-api-2.0.2.jar!/" />
+      </CLASSES>
+      <JAVADOC />
+      <SOURCES>
+        <root url="jar://$PROJECT_DIR$/../.gradle/caches/modules-2/files-2.1/jakarta.validation/jakarta.validation-api/2.0.2/ef429a7f3bc2d2d1784a1135668a857a6aaedf31/jakarta.validation-api-2.0.2-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Gradle: jakarta.xml.bind:jakarta.xml.bind-api:2.3.3">
+      <CLASSES>
+        <root url="jar://$PROJECT_DIR$/../.gradle/caches/modules-2/files-2.1/jakarta.xml.bind/jakarta.xml.bind-api/2.3.3/48e3b9cfc10752fba3521d6511f4165bea951801/jakarta.xml.bind-api-2.3.3.jar!/" />
+      </CLASSES>
+      <JAVADOC />
+      <SOURCES>
+        <root url="jar://$PROJECT_DIR$/../.gradle/caches/modules-2/files-2.1/jakarta.xml.bind/jakarta.xml.bind-api/2.3.3/d83744bae211a4072c39f007000a13f501a88395/jakarta.xml.bind-api-2.3.3-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Gradle: javax.inject:javax.inject:1">
+      <CLASSES>
+        <root url="jar://$PROJECT_DIR$/../.gradle/caches/modules-2/files-2.1/javax.inject/javax.inject/1/6975da39a7040257bd51d21a231b76c915872d38/javax.inject-1.jar!/" />
+      </CLASSES>
+      <JAVADOC />
+      <SOURCES>
+        <root url="jar://$PROJECT_DIR$/../.gradle/caches/modules-2/files-2.1/javax.inject/javax.inject/1/a00123f261762a7c5e0ec916a2c7c8298d29c400/javax.inject-1-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Gradle: net.bytebuddy:byte-buddy-agent:1.11.22">
+      <CLASSES>
+        <root url="jar://$PROJECT_DIR$/../.gradle/caches/modules-2/files-2.1/net.bytebuddy/byte-buddy-agent/1.11.22/2fbcf3210dfc09b42242e3b66a5281cc5b9adb80/byte-buddy-agent-1.11.22.jar!/" />
+      </CLASSES>
+      <JAVADOC />
+      <SOURCES>
+        <root url="jar://$PROJECT_DIR$/../.gradle/caches/modules-2/files-2.1/net.bytebuddy/byte-buddy-agent/1.11.22/8983d6c1637742ecad1c3be265d93338402efea9/byte-buddy-agent-1.11.22-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Gradle: net.bytebuddy:byte-buddy:1.11.22">
+      <CLASSES>
+        <root url="jar://$PROJECT_DIR$/../.gradle/caches/modules-2/files-2.1/net.bytebuddy/byte-buddy/1.11.22/8b4c7fa5562a09da1c2a9ab0873cb51f5034d83f/byte-buddy-1.11.22.jar!/" />
+      </CLASSES>
+      <JAVADOC />
+      <SOURCES>
+        <root url="jar://$PROJECT_DIR$/../.gradle/caches/modules-2/files-2.1/net.bytebuddy/byte-buddy/1.11.22/70c06cf42a26f38acec9409f4c24b2963fc098b2/byte-buddy-1.11.22-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Gradle: net.minidev:accessors-smart:2.4.7">
+      <CLASSES>
+        <root url="jar://$PROJECT_DIR$/../.gradle/caches/modules-2/files-2.1/net.minidev/accessors-smart/2.4.7/3970cfc505e6657ca60f3aa57c849f6043000d7a/accessors-smart-2.4.7.jar!/" />
+      </CLASSES>
+      <JAVADOC />
+      <SOURCES>
+        <root url="jar://$PROJECT_DIR$/../.gradle/caches/modules-2/files-2.1/net.minidev/accessors-smart/2.4.7/6369c6c389cd6e1e1ee42d8ea8823a78decae735/accessors-smart-2.4.7-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Gradle: net.minidev:json-smart:2.4.7">
+      <CLASSES>
+        <root url="jar://$PROJECT_DIR$/../.gradle/caches/modules-2/files-2.1/net.minidev/json-smart/2.4.7/8d7f4c1530c07c54930935f3da85f48b83b3c109/json-smart-2.4.7.jar!/" />
+      </CLASSES>
+      <JAVADOC />
+      <SOURCES>
+        <root url="jar://$PROJECT_DIR$/../.gradle/caches/modules-2/files-2.1/net.minidev/json-smart/2.4.7/d64652c79751177c96a294fd5a1dcd61a330e940/json-smart-2.4.7-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Gradle: org.apache.commons:commons-lang3:3.12.0">
+      <CLASSES>
+        <root url="jar://$PROJECT_DIR$/../.gradle/caches/modules-2/files-2.1/org.apache.commons/commons-lang3/3.12.0/c6842c86792ff03b9f1d1fe2aab8dc23aa6c6f0e/commons-lang3-3.12.0.jar!/" />
+      </CLASSES>
+      <JAVADOC />
+      <SOURCES>
+        <root url="jar://$PROJECT_DIR$/../.gradle/caches/modules-2/files-2.1/org.apache.commons/commons-lang3/3.12.0/198b882fdc2c72c89c63401d946f6ba46c3acea3/commons-lang3-3.12.0-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Gradle: org.apache.logging.log4j:log4j-api:2.14.1">
+      <CLASSES>
+        <root url="jar://$PROJECT_DIR$/../.gradle/caches/modules-2/files-2.1/org.apache.logging.log4j/log4j-api/2.14.1/cd8858fbbde69f46bce8db1152c18a43328aae78/log4j-api-2.14.1.jar!/" />
+      </CLASSES>
+      <JAVADOC />
+      <SOURCES>
+        <root url="jar://$PROJECT_DIR$/../.gradle/caches/modules-2/files-2.1/org.apache.logging.log4j/log4j-api/2.14.1/b2327c47ca413c1ec183575b19598e281fcd74d8/log4j-api-2.14.1-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Gradle: org.apache.logging.log4j:log4j-to-slf4j:2.14.1">
+      <CLASSES>
+        <root url="jar://$PROJECT_DIR$/../.gradle/caches/modules-2/files-2.1/org.apache.logging.log4j/log4j-to-slf4j/2.14.1/ce8a86a3f50a4304749828ce68e7478cafbc8039/log4j-to-slf4j-2.14.1.jar!/" />
+      </CLASSES>
+      <JAVADOC />
+      <SOURCES>
+        <root url="jar://$PROJECT_DIR$/../.gradle/caches/modules-2/files-2.1/org.apache.logging.log4j/log4j-to-slf4j/2.14.1/54c937b22e4c4025c1f85482f92d4cf87b2d0972/log4j-to-slf4j-2.14.1-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Gradle: org.apache.tomcat.embed:tomcat-embed-core:9.0.55">
+      <CLASSES>
+        <root url="jar://$PROJECT_DIR$/../.gradle/caches/modules-2/files-2.1/org.apache.tomcat.embed/tomcat-embed-core/9.0.55/6ab68425d34f35e93cf97e1950c2c710161d8ce1/tomcat-embed-core-9.0.55.jar!/" />
+      </CLASSES>
+      <JAVADOC />
+      <SOURCES>
+        <root url="jar://$PROJECT_DIR$/../.gradle/caches/modules-2/files-2.1/org.apache.tomcat.embed/tomcat-embed-core/9.0.55/49820bd4111ae1355379498b77d8139a5b1361c7/tomcat-embed-core-9.0.55-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Gradle: org.apache.tomcat.embed:tomcat-embed-el:9.0.55">
+      <CLASSES>
+        <root url="jar://$PROJECT_DIR$/../.gradle/caches/modules-2/files-2.1/org.apache.tomcat.embed/tomcat-embed-el/9.0.55/d8b69643d1566712cf849a7e8e95c917f8aed1d3/tomcat-embed-el-9.0.55.jar!/" />
+      </CLASSES>
+      <JAVADOC />
+      <SOURCES>
+        <root url="jar://$PROJECT_DIR$/../.gradle/caches/modules-2/files-2.1/org.apache.tomcat.embed/tomcat-embed-el/9.0.55/db3db13d90c3c26781e09e0c834d204b2d3d0c4f/tomcat-embed-el-9.0.55-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Gradle: org.apache.tomcat.embed:tomcat-embed-websocket:9.0.55">
+      <CLASSES>
+        <root url="jar://$PROJECT_DIR$/../.gradle/caches/modules-2/files-2.1/org.apache.tomcat.embed/tomcat-embed-websocket/9.0.55/4e6dc3646d00887497bd465bc4a63bfb0a7b10ab/tomcat-embed-websocket-9.0.55.jar!/" />
+      </CLASSES>
+      <JAVADOC />
+      <SOURCES>
+        <root url="jar://$PROJECT_DIR$/../.gradle/caches/modules-2/files-2.1/org.apache.tomcat.embed/tomcat-embed-websocket/9.0.55/add981a1f939b1bfd4860dd24d3686c9fd1c182f/tomcat-embed-websocket-9.0.55-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Gradle: org.apiguardian:apiguardian-api:1.1.2">
+      <CLASSES>
+        <root url="jar://$PROJECT_DIR$/../.gradle/caches/modules-2/files-2.1/org.apiguardian/apiguardian-api/1.1.2/a231e0d844d2721b0fa1b238006d15c6ded6842a/apiguardian-api-1.1.2.jar!/" />
+      </CLASSES>
+      <JAVADOC />
+      <SOURCES>
+        <root url="jar://$PROJECT_DIR$/../.gradle/caches/modules-2/files-2.1/org.apiguardian/apiguardian-api/1.1.2/e0787a997746ac32639e0bf3cb27af8dce8a3428/apiguardian-api-1.1.2-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Gradle: org.assertj:assertj-core:3.21.0">
+      <CLASSES>
+        <root url="jar://$PROJECT_DIR$/../.gradle/caches/modules-2/files-2.1/org.assertj/assertj-core/3.21.0/27a14d6d22c4e3d58f799fb2a5ca8eaf53e6942a/assertj-core-3.21.0.jar!/" />
+      </CLASSES>
+      <JAVADOC />
+      <SOURCES>
+        <root url="jar://$PROJECT_DIR$/../.gradle/caches/modules-2/files-2.1/org.assertj/assertj-core/3.21.0/906e45ec2b27474605d3daa5f00519a9a74cbf64/assertj-core-3.21.0-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Gradle: org.eclipse.jdt:ecj:3.26.0">
+      <CLASSES>
+        <root url="jar://$PROJECT_DIR$/../.gradle/caches/modules-2/files-2.1/org.eclipse.jdt/ecj/3.26.0/4837be609a3368a0f7e7cf0dc1bdbc7fe94993de/ecj-3.26.0.jar!/" />
+      </CLASSES>
+      <JAVADOC />
+      <SOURCES>
+        <root url="jar://$PROJECT_DIR$/../.gradle/caches/modules-2/files-2.1/org.eclipse.jdt/ecj/3.26.0/93617e44d5b7fd7c301ad128d64367b64db2fa34/ecj-3.26.0-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Gradle: org.hamcrest:hamcrest:2.2">
+      <CLASSES>
+        <root url="jar://$PROJECT_DIR$/../.gradle/caches/modules-2/files-2.1/org.hamcrest/hamcrest/2.2/1820c0968dba3a11a1b30669bb1f01978a91dedc/hamcrest-2.2.jar!/" />
+      </CLASSES>
+      <JAVADOC />
+      <SOURCES>
+        <root url="jar://$PROJECT_DIR$/../.gradle/caches/modules-2/files-2.1/org.hamcrest/hamcrest/2.2/a0a13cfc629420efb587d954f982c4c6a100da25/hamcrest-2.2-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Gradle: org.hdrhistogram:HdrHistogram:2.1.12">
+      <CLASSES>
+        <root url="jar://$PROJECT_DIR$/../.gradle/caches/modules-2/files-2.1/org.hdrhistogram/HdrHistogram/2.1.12/6eb7552156e0d517ae80cc2247be1427c8d90452/HdrHistogram-2.1.12.jar!/" />
+      </CLASSES>
+      <JAVADOC />
+      <SOURCES>
+        <root url="jar://$PROJECT_DIR$/../.gradle/caches/modules-2/files-2.1/org.hdrhistogram/HdrHistogram/2.1.12/d8cf7bad79ef75fd41395c5f464ea38777463d95/HdrHistogram-2.1.12-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Gradle: org.hibernate.validator:hibernate-validator:6.2.0.Final">
+      <CLASSES>
+        <root url="jar://$PROJECT_DIR$/../.gradle/caches/modules-2/files-2.1/org.hibernate.validator/hibernate-validator/6.2.0.Final/d6b0760dfffbf379cedd02f715ff4c9a2e215921/hibernate-validator-6.2.0.Final.jar!/" />
+      </CLASSES>
+      <JAVADOC />
+      <SOURCES>
+        <root url="jar://$PROJECT_DIR$/../.gradle/caches/modules-2/files-2.1/org.hibernate.validator/hibernate-validator/6.2.0.Final/3da5ee083a02f32cfcb0664677288c48f35c384c/hibernate-validator-6.2.0.Final-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Gradle: org.jboss.logging:jboss-logging:3.4.2.Final">
+      <CLASSES>
+        <root url="jar://$PROJECT_DIR$/../.gradle/caches/modules-2/files-2.1/org.jboss.logging/jboss-logging/3.4.2.Final/e517b8a93dd9962ed5481345e4d262fdd47c4217/jboss-logging-3.4.2.Final.jar!/" />
+      </CLASSES>
+      <JAVADOC />
+      <SOURCES>
+        <root url="jar://$PROJECT_DIR$/../.gradle/caches/modules-2/files-2.1/org.jboss.logging/jboss-logging/3.4.2.Final/2eb4b975abf74e3ba3c125891a5101669b431c28/jboss-logging-3.4.2.Final-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Gradle: org.junit.jupiter:junit-jupiter-api:5.8.1">
+      <CLASSES>
+        <root url="jar://$PROJECT_DIR$/../.gradle/caches/modules-2/files-2.1/org.junit.jupiter/junit-jupiter-api/5.8.1/6538b88eb8bf8811bc7b6efb5246f835c15e0bfe/junit-jupiter-api-5.8.1.jar!/" />
+      </CLASSES>
+      <JAVADOC />
+      <SOURCES>
+        <root url="jar://$PROJECT_DIR$/../.gradle/caches/modules-2/files-2.1/org.junit.jupiter/junit-jupiter-api/5.8.1/a3e13f34a2a47fb2c0d7385c5e6e0e8623194061/junit-jupiter-api-5.8.1-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Gradle: org.junit.jupiter:junit-jupiter-engine:5.8.1">
+      <CLASSES>
+        <root url="jar://$PROJECT_DIR$/../.gradle/caches/modules-2/files-2.1/org.junit.jupiter/junit-jupiter-engine/5.8.1/21b86e08aae2720bbf017703669948be96d1388c/junit-jupiter-engine-5.8.1.jar!/" />
+      </CLASSES>
+      <JAVADOC />
+      <SOURCES>
+        <root url="jar://$PROJECT_DIR$/../.gradle/caches/modules-2/files-2.1/org.junit.jupiter/junit-jupiter-engine/5.8.1/ea87fe3d752e24397f71f347872e79a89c61a704/junit-jupiter-engine-5.8.1-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Gradle: org.junit.jupiter:junit-jupiter-params:5.8.1">
+      <CLASSES>
+        <root url="jar://$PROJECT_DIR$/../.gradle/caches/modules-2/files-2.1/org.junit.jupiter/junit-jupiter-params/5.8.1/13afdb5d414cbe991fce3ef6b864de77c9644dae/junit-jupiter-params-5.8.1.jar!/" />
+      </CLASSES>
+      <JAVADOC />
+      <SOURCES>
+        <root url="jar://$PROJECT_DIR$/../.gradle/caches/modules-2/files-2.1/org.junit.jupiter/junit-jupiter-params/5.8.1/d69300e26c3af1d798f412df28d060333e052472/junit-jupiter-params-5.8.1-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Gradle: org.junit.jupiter:junit-jupiter:5.8.1">
+      <CLASSES>
+        <root url="jar://$PROJECT_DIR$/../.gradle/caches/modules-2/files-2.1/org.junit.jupiter/junit-jupiter/5.8.1/73a218cf02d36d4e87bb9697fdbe0780e92b6bd3/junit-jupiter-5.8.1.jar!/" />
+      </CLASSES>
+      <JAVADOC />
+      <SOURCES>
+        <root url="jar://$PROJECT_DIR$/../.gradle/caches/modules-2/files-2.1/org.junit.jupiter/junit-jupiter/5.8.1/5fd01c33132462aab3905cb74bd1097a713ab91a/junit-jupiter-5.8.1-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Gradle: org.junit.platform:junit-platform-commons:1.8.1">
+      <CLASSES>
+        <root url="jar://$PROJECT_DIR$/../.gradle/caches/modules-2/files-2.1/org.junit.platform/junit-platform-commons/1.8.1/1e362cbe6d0f225b066757865e233972557484/junit-platform-commons-1.8.1.jar!/" />
+      </CLASSES>
+      <JAVADOC />
+      <SOURCES>
+        <root url="jar://$PROJECT_DIR$/../.gradle/caches/modules-2/files-2.1/org.junit.platform/junit-platform-commons/1.8.1/386b61876dd33d0ef0381189d3c1db9455d99659/junit-platform-commons-1.8.1-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Gradle: org.junit.platform:junit-platform-engine:1.8.1">
+      <CLASSES>
+        <root url="jar://$PROJECT_DIR$/../.gradle/caches/modules-2/files-2.1/org.junit.platform/junit-platform-engine/1.8.1/e6c63bf990dc88a6527b4ed617b23e47048f07e0/junit-platform-engine-1.8.1.jar!/" />
+      </CLASSES>
+      <JAVADOC />
+      <SOURCES>
+        <root url="jar://$PROJECT_DIR$/../.gradle/caches/modules-2/files-2.1/org.junit.platform/junit-platform-engine/1.8.1/9d87ea7959823714ad803aa91e0618bf2213b52c/junit-platform-engine-1.8.1-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Gradle: org.latencyutils:LatencyUtils:2.0.3">
+      <CLASSES>
+        <root url="jar://$PROJECT_DIR$/../.gradle/caches/modules-2/files-2.1/org.latencyutils/LatencyUtils/2.0.3/769c0b82cb2421c8256300e907298a9410a2a3d3/LatencyUtils-2.0.3.jar!/" />
+      </CLASSES>
+      <JAVADOC />
+      <SOURCES>
+        <root url="jar://$PROJECT_DIR$/../.gradle/caches/modules-2/files-2.1/org.latencyutils/LatencyUtils/2.0.3/fbc38259e2077a428984637d811dac542a6a913e/LatencyUtils-2.0.3-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Gradle: org.mockito:mockito-core:4.0.0">
+      <CLASSES>
+        <root url="jar://$PROJECT_DIR$/../.gradle/caches/modules-2/files-2.1/org.mockito/mockito-core/4.0.0/f5195e0c4a45716bbd2d1d29173adbd148acce3a/mockito-core-4.0.0.jar!/" />
+      </CLASSES>
+      <JAVADOC />
+      <SOURCES>
+        <root url="jar://$PROJECT_DIR$/../.gradle/caches/modules-2/files-2.1/org.mockito/mockito-core/4.0.0/7350016b49c3ffca18b5ef4b664e730bd99cd054/mockito-core-4.0.0-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Gradle: org.mockito:mockito-junit-jupiter:4.0.0">
+      <CLASSES>
+        <root url="jar://$PROJECT_DIR$/../.gradle/caches/modules-2/files-2.1/org.mockito/mockito-junit-jupiter/4.0.0/b76de25bd6e5d8f7924d0536729c0076e37e9396/mockito-junit-jupiter-4.0.0.jar!/" />
+      </CLASSES>
+      <JAVADOC />
+      <SOURCES>
+        <root url="jar://$PROJECT_DIR$/../.gradle/caches/modules-2/files-2.1/org.mockito/mockito-junit-jupiter/4.0.0/6aa189452f42167be3dc9ce5ac029df0f15ba0e5/mockito-junit-jupiter-4.0.0-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Gradle: org.mongodb:bson:4.4.0">
+      <CLASSES>
+        <root url="jar://$PROJECT_DIR$/../.gradle/caches/modules-2/files-2.1/org.mongodb/bson/4.4.0/963019c8b3e7366a6d880c2de5705c66864dc8b9/bson-4.4.0.jar!/" />
+      </CLASSES>
+      <JAVADOC />
+      <SOURCES>
+        <root url="jar://$PROJECT_DIR$/../.gradle/caches/modules-2/files-2.1/org.mongodb/bson/4.4.0/e54859a3ec4d995414e36a6b3758aa908ac7931e/bson-4.4.0-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Gradle: org.mongodb:mongo-java-driver:3.12.8">
+      <CLASSES>
+        <root url="jar://$PROJECT_DIR$/../.gradle/caches/modules-2/files-2.1/org.mongodb/mongo-java-driver/3.12.8/d9e12b2056cea964a3805558382e0d30596444c5/mongo-java-driver-3.12.8.jar!/" />
+      </CLASSES>
+      <JAVADOC />
+      <SOURCES>
+        <root url="jar://$PROJECT_DIR$/../.gradle/caches/modules-2/files-2.1/org.mongodb/mongo-java-driver/3.12.8/ee0fca17b51f6e2dce503a3250ed77e171991305/mongo-java-driver-3.12.8-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Gradle: org.mongodb:mongodb-driver-core:4.4.0">
+      <CLASSES>
+        <root url="jar://$PROJECT_DIR$/../.gradle/caches/modules-2/files-2.1/org.mongodb/mongodb-driver-core/4.4.0/e64a4cec513ad880c7945fb96b34871b875e1e48/mongodb-driver-core-4.4.0.jar!/" />
+      </CLASSES>
+      <JAVADOC />
+      <SOURCES>
+        <root url="jar://$PROJECT_DIR$/../.gradle/caches/modules-2/files-2.1/org.mongodb/mongodb-driver-core/4.4.0/3369bda7873b6127779587d68697dda2a4a87e93/mongodb-driver-core-4.4.0-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Gradle: org.mongodb:mongodb-driver-sync:4.4.0">
+      <CLASSES>
+        <root url="jar://$PROJECT_DIR$/../.gradle/caches/modules-2/files-2.1/org.mongodb/mongodb-driver-sync/4.4.0/8cf71eda642db02ee59ef9ff1e3856d6c8f853e3/mongodb-driver-sync-4.4.0.jar!/" />
+      </CLASSES>
+      <JAVADOC />
+      <SOURCES>
+        <root url="jar://$PROJECT_DIR$/../.gradle/caches/modules-2/files-2.1/org.mongodb/mongodb-driver-sync/4.4.0/f44a052601cbf8099204abbdcb604fef0798930b/mongodb-driver-sync-4.4.0-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Gradle: org.objenesis:objenesis:3.2">
+      <CLASSES>
+        <root url="jar://$PROJECT_DIR$/../.gradle/caches/modules-2/files-2.1/org.objenesis/objenesis/3.2/7fadf57620c8b8abdf7519533e5527367cb51f09/objenesis-3.2.jar!/" />
+      </CLASSES>
+      <JAVADOC />
+      <SOURCES>
+        <root url="jar://$PROJECT_DIR$/../.gradle/caches/modules-2/files-2.1/org.objenesis/objenesis/3.2/9f5da90020a255f25b6d8da8db273e2d38ce9805/objenesis-3.2-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Gradle: org.opentest4j:opentest4j:1.2.0">
+      <CLASSES>
+        <root url="jar://$PROJECT_DIR$/../.gradle/caches/modules-2/files-2.1/org.opentest4j/opentest4j/1.2.0/28c11eb91f9b6d8e200631d46e20a7f407f2a046/opentest4j-1.2.0.jar!/" />
+      </CLASSES>
+      <JAVADOC />
+      <SOURCES>
+        <root url="jar://$PROJECT_DIR$/../.gradle/caches/modules-2/files-2.1/org.opentest4j/opentest4j/1.2.0/41d55b3c2254de9837b4ec8923cbd371b8a7eab5/opentest4j-1.2.0-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Gradle: org.ow2.asm:asm:9.1">
+      <CLASSES>
+        <root url="jar://$PROJECT_DIR$/../.gradle/caches/modules-2/files-2.1/org.ow2.asm/asm/9.1/a99500cf6eea30535eeac6be73899d048f8d12a8/asm-9.1.jar!/" />
+      </CLASSES>
+      <JAVADOC />
+      <SOURCES>
+        <root url="jar://$PROJECT_DIR$/../.gradle/caches/modules-2/files-2.1/org.ow2.asm/asm/9.1/3fb15dd478bf8dcb039aa0d035f9fff9e4229c61/asm-9.1-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Gradle: org.projectlombok:lombok:1.18.22">
+      <CLASSES>
+        <root url="jar://$PROJECT_DIR$/../.gradle/caches/modules-2/files-2.1/org.projectlombok/lombok/1.18.22/9c08ea24c6eb714e2d6170e8122c069a0ba9aacf/lombok-1.18.22.jar!/" />
+      </CLASSES>
+      <JAVADOC />
+      <SOURCES>
+        <root url="jar://$PROJECT_DIR$/../.gradle/caches/modules-2/files-2.1/org.projectlombok/lombok/1.18.22/764fbcf20fe348c23338b3f8a7373c9e7d206956/lombok-1.18.22-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Gradle: org.skyscreamer:jsonassert:1.5.0">
+      <CLASSES>
+        <root url="jar://$PROJECT_DIR$/../.gradle/caches/modules-2/files-2.1/org.skyscreamer/jsonassert/1.5.0/6c9d5fe2f59da598d9aefc1cfc6528ff3cf32df3/jsonassert-1.5.0.jar!/" />
+      </CLASSES>
+      <JAVADOC />
+      <SOURCES>
+        <root url="jar://$PROJECT_DIR$/../.gradle/caches/modules-2/files-2.1/org.skyscreamer/jsonassert/1.5.0/d729b258165a2fd9b5d6156c05c4c4f7ca053117/jsonassert-1.5.0-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Gradle: org.slf4j:jul-to-slf4j:1.7.32">
+      <CLASSES>
+        <root url="jar://$PROJECT_DIR$/../.gradle/caches/modules-2/files-2.1/org.slf4j/jul-to-slf4j/1.7.32/8a055c04ab44e8e8326901cadf89080721348bdb/jul-to-slf4j-1.7.32.jar!/" />
+      </CLASSES>
+      <JAVADOC />
+      <SOURCES>
+        <root url="jar://$PROJECT_DIR$/../.gradle/caches/modules-2/files-2.1/org.slf4j/jul-to-slf4j/1.7.32/d03fa92a2a508b5595b896b93f13f04bcde11171/jul-to-slf4j-1.7.32-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Gradle: org.slf4j:slf4j-api:1.7.32">
+      <CLASSES>
+        <root url="jar://$PROJECT_DIR$/../.gradle/caches/modules-2/files-2.1/org.slf4j/slf4j-api/1.7.32/cdcff33940d9f2de763bc41ea05a0be5941176c3/slf4j-api-1.7.32.jar!/" />
+      </CLASSES>
+      <JAVADOC />
+      <SOURCES>
+        <root url="jar://$PROJECT_DIR$/../.gradle/caches/modules-2/files-2.1/org.slf4j/slf4j-api/1.7.32/4381b152f738580aef4e436b2692a3db30609b26/slf4j-api-1.7.32-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Gradle: org.springdoc:springdoc-openapi-common:1.6.4">
+      <CLASSES>
+        <root url="jar://$PROJECT_DIR$/../.gradle/caches/modules-2/files-2.1/org.springdoc/springdoc-openapi-common/1.6.4/b48bb898e9e7a42320bfdb1f2dbe9aa957ddae27/springdoc-openapi-common-1.6.4.jar!/" />
+      </CLASSES>
+      <JAVADOC />
+      <SOURCES>
+        <root url="jar://$PROJECT_DIR$/../.gradle/caches/modules-2/files-2.1/org.springdoc/springdoc-openapi-common/1.6.4/575007a5968f26b5ad66c403faefa308f18e8c6b/springdoc-openapi-common-1.6.4-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Gradle: org.springdoc:springdoc-openapi-ui:1.6.4">
+      <CLASSES>
+        <root url="jar://$PROJECT_DIR$/../.gradle/caches/modules-2/files-2.1/org.springdoc/springdoc-openapi-ui/1.6.4/cc0ec1005398b0355e4e424fe10c86899a52b36e/springdoc-openapi-ui-1.6.4.jar!/" />
+      </CLASSES>
+      <JAVADOC />
+      <SOURCES>
+        <root url="jar://$PROJECT_DIR$/../.gradle/caches/modules-2/files-2.1/org.springdoc/springdoc-openapi-ui/1.6.4/aed69b666222457a466208e063804d234581a6b8/springdoc-openapi-ui-1.6.4-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Gradle: org.springdoc:springdoc-openapi-webmvc-core:1.6.4">
+      <CLASSES>
+        <root url="jar://$PROJECT_DIR$/../.gradle/caches/modules-2/files-2.1/org.springdoc/springdoc-openapi-webmvc-core/1.6.4/38191408c19ee1b52c526b02b9436d780377fa73/springdoc-openapi-webmvc-core-1.6.4.jar!/" />
+      </CLASSES>
+      <JAVADOC />
+      <SOURCES>
+        <root url="jar://$PROJECT_DIR$/../.gradle/caches/modules-2/files-2.1/org.springdoc/springdoc-openapi-webmvc-core/1.6.4/d9a56b58403b45697ac06dd13d9a06c824daaee4/springdoc-openapi-webmvc-core-1.6.4-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Gradle: org.springframework.boot:spring-boot-actuator-autoconfigure:2.6.0">
+      <CLASSES>
+        <root url="jar://$PROJECT_DIR$/../.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-actuator-autoconfigure/2.6.0/b5e3a1bf1a48d63d6fe5355bb7243e3883ed11ab/spring-boot-actuator-autoconfigure-2.6.0.jar!/" />
+      </CLASSES>
+      <JAVADOC />
+      <SOURCES>
+        <root url="jar://$PROJECT_DIR$/../.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-actuator-autoconfigure/2.6.0/e8a3c25cfddf61dcb86c14bfdad4b3a84914d5a2/spring-boot-actuator-autoconfigure-2.6.0-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Gradle: org.springframework.boot:spring-boot-actuator:2.6.0">
+      <CLASSES>
+        <root url="jar://$PROJECT_DIR$/../.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-actuator/2.6.0/a71f1e0da2c6e085fbd286adc3534ecaffaef74f/spring-boot-actuator-2.6.0.jar!/" />
+      </CLASSES>
+      <JAVADOC />
+      <SOURCES>
+        <root url="jar://$PROJECT_DIR$/../.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-actuator/2.6.0/5737e0bfc374ba6ed9d3232b755c8ce94e4f377c/spring-boot-actuator-2.6.0-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Gradle: org.springframework.boot:spring-boot-autoconfigure:2.6.0">
+      <CLASSES>
+        <root url="jar://$PROJECT_DIR$/../.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-autoconfigure/2.6.0/acec579389fb58c9de6920d6fd93049c51c67180/spring-boot-autoconfigure-2.6.0.jar!/" />
+      </CLASSES>
+      <JAVADOC />
+      <SOURCES>
+        <root url="jar://$PROJECT_DIR$/../.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-autoconfigure/2.6.0/8e6a50c45a165437f7cb3e705717d9ee759717dc/spring-boot-autoconfigure-2.6.0-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Gradle: org.springframework.boot:spring-boot-starter-actuator:2.6.0">
+      <CLASSES>
+        <root url="jar://$PROJECT_DIR$/../.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-starter-actuator/2.6.0/fb1d93720e1a552de30de20f16f3c738d79447ba/spring-boot-starter-actuator-2.6.0.jar!/" />
+      </CLASSES>
+      <JAVADOC />
+      <SOURCES>
+        <root url="jar://$PROJECT_DIR$/../.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-starter-actuator/2.6.0/e8189beb2b56ceb230078304664e9c7fbd1bb409/spring-boot-starter-actuator-2.6.0-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Gradle: org.springframework.boot:spring-boot-starter-data-mongodb:2.6.0">
+      <CLASSES>
+        <root url="jar://$PROJECT_DIR$/../.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-starter-data-mongodb/2.6.0/7b6ab51dd8f38b9d8723afaf6f0605e6f360bbbe/spring-boot-starter-data-mongodb-2.6.0.jar!/" />
+      </CLASSES>
+      <JAVADOC />
+      <SOURCES>
+        <root url="jar://$PROJECT_DIR$/../.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-starter-data-mongodb/2.6.0/a17420fa95c4b025614d7aa4c1e85b34b61ec5c5/spring-boot-starter-data-mongodb-2.6.0-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Gradle: org.springframework.boot:spring-boot-starter-json:2.6.0">
+      <CLASSES>
+        <root url="jar://$PROJECT_DIR$/../.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-starter-json/2.6.0/d7b0cf3701abc37d97097bcf9450393c3439fe65/spring-boot-starter-json-2.6.0.jar!/" />
+      </CLASSES>
+      <JAVADOC />
+      <SOURCES>
+        <root url="jar://$PROJECT_DIR$/../.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-starter-json/2.6.0/900a99f91804d7445b352327404395c4fb727004/spring-boot-starter-json-2.6.0-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Gradle: org.springframework.boot:spring-boot-starter-logging:2.6.0">
+      <CLASSES>
+        <root url="jar://$PROJECT_DIR$/../.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-starter-logging/2.6.0/7ecfaa03a1c77847b1d92082575b13cd12de478d/spring-boot-starter-logging-2.6.0.jar!/" />
+      </CLASSES>
+      <JAVADOC />
+      <SOURCES>
+        <root url="jar://$PROJECT_DIR$/../.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-starter-logging/2.6.0/96e933b4a76a1ef62112234c3d5172a7c708f9ec/spring-boot-starter-logging-2.6.0-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Gradle: org.springframework.boot:spring-boot-starter-test:2.6.0">
+      <CLASSES>
+        <root url="jar://$PROJECT_DIR$/../.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-starter-test/2.6.0/f46420ff59926ec459a5a3439c6b8c0c7ff6a2fe/spring-boot-starter-test-2.6.0.jar!/" />
+      </CLASSES>
+      <JAVADOC />
+      <SOURCES>
+        <root url="jar://$PROJECT_DIR$/../.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-starter-test/2.6.0/6584e5071fa5ba73456fba6ca742d6677177ef84/spring-boot-starter-test-2.6.0-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Gradle: org.springframework.boot:spring-boot-starter-tomcat:2.6.0">
+      <CLASSES>
+        <root url="jar://$PROJECT_DIR$/../.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-starter-tomcat/2.6.0/ec2380a4d60a9dc6cae27e462bb6e52e867547e5/spring-boot-starter-tomcat-2.6.0.jar!/" />
+      </CLASSES>
+      <JAVADOC />
+      <SOURCES>
+        <root url="jar://$PROJECT_DIR$/../.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-starter-tomcat/2.6.0/8f76cc35cbd28999eb3f91d16b8d08695f176601/spring-boot-starter-tomcat-2.6.0-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Gradle: org.springframework.boot:spring-boot-starter-validation:2.6.0">
+      <CLASSES>
+        <root url="jar://$PROJECT_DIR$/../.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-starter-validation/2.6.0/1d95c8060436fa20bec403daff713d9471a45e58/spring-boot-starter-validation-2.6.0.jar!/" />
+      </CLASSES>
+      <JAVADOC />
+      <SOURCES>
+        <root url="jar://$PROJECT_DIR$/../.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-starter-validation/2.6.0/212bdb580e4a49e83331989f354bc714b3682ad8/spring-boot-starter-validation-2.6.0-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Gradle: org.springframework.boot:spring-boot-starter-web:2.6.0">
+      <CLASSES>
+        <root url="jar://$PROJECT_DIR$/../.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-starter-web/2.6.0/483a28b67c507a21b8c4ff62d88cd811911e5641/spring-boot-starter-web-2.6.0.jar!/" />
+      </CLASSES>
+      <JAVADOC />
+      <SOURCES>
+        <root url="jar://$PROJECT_DIR$/../.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-starter-web/2.6.0/daef8974a213bf10691f4c096b92ddb822ee7d9a/spring-boot-starter-web-2.6.0-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Gradle: org.springframework.boot:spring-boot-starter:2.6.0">
+      <CLASSES>
+        <root url="jar://$PROJECT_DIR$/../.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-starter/2.6.0/eaa73f531e85b785b1ba27ff0abf6ced47a79e8d/spring-boot-starter-2.6.0.jar!/" />
+      </CLASSES>
+      <JAVADOC />
+      <SOURCES>
+        <root url="jar://$PROJECT_DIR$/../.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-starter/2.6.0/f72a51757bfdac1ef6561ac2c3e0250a12f5b94d/spring-boot-starter-2.6.0-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Gradle: org.springframework.boot:spring-boot-test-autoconfigure:2.6.0">
+      <CLASSES>
+        <root url="jar://$PROJECT_DIR$/../.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-test-autoconfigure/2.6.0/dc670707f2c5e06344b32083ed80503e2e7f3eb8/spring-boot-test-autoconfigure-2.6.0.jar!/" />
+      </CLASSES>
+      <JAVADOC />
+      <SOURCES>
+        <root url="jar://$PROJECT_DIR$/../.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-test-autoconfigure/2.6.0/31103767bdd201c303c3137f9c2615c09194d833/spring-boot-test-autoconfigure-2.6.0-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Gradle: org.springframework.boot:spring-boot-test:2.6.0">
+      <CLASSES>
+        <root url="jar://$PROJECT_DIR$/../.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-test/2.6.0/ef36285bd04451cd1d15a6d1349a68045be862f3/spring-boot-test-2.6.0.jar!/" />
+      </CLASSES>
+      <JAVADOC />
+      <SOURCES>
+        <root url="jar://$PROJECT_DIR$/../.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-test/2.6.0/6379912adf28c3df846dfa70467543f0ba915c35/spring-boot-test-2.6.0-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Gradle: org.springframework.boot:spring-boot:2.6.0">
+      <CLASSES>
+        <root url="jar://$PROJECT_DIR$/../.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot/2.6.0/44234f609f8cbe15bea35768e85e83a3d2dbee28/spring-boot-2.6.0.jar!/" />
+      </CLASSES>
+      <JAVADOC />
+      <SOURCES>
+        <root url="jar://$PROJECT_DIR$/../.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot/2.6.0/3d66ff1679568e13779e507bf80ce579e0d50998/spring-boot-2.6.0-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Gradle: org.springframework.data:spring-data-commons:2.6.0">
+      <CLASSES>
+        <root url="jar://$PROJECT_DIR$/../.gradle/caches/modules-2/files-2.1/org.springframework.data/spring-data-commons/2.6.0/5a9afaa6e0a4cd74183a794f467c9b4a546b4cbe/spring-data-commons-2.6.0.jar!/" />
+      </CLASSES>
+      <JAVADOC />
+      <SOURCES>
+        <root url="jar://$PROJECT_DIR$/../.gradle/caches/modules-2/files-2.1/org.springframework.data/spring-data-commons/2.6.0/222240ede82e61cc62af0402e437df392d8e17b6/spring-data-commons-2.6.0-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Gradle: org.springframework.data:spring-data-mongodb:3.3.0">
+      <CLASSES>
+        <root url="jar://$PROJECT_DIR$/../.gradle/caches/modules-2/files-2.1/org.springframework.data/spring-data-mongodb/3.3.0/8aeeb39bac0314b09b8237fa5da03bcc364551fa/spring-data-mongodb-3.3.0.jar!/" />
+      </CLASSES>
+      <JAVADOC />
+      <SOURCES>
+        <root url="jar://$PROJECT_DIR$/../.gradle/caches/modules-2/files-2.1/org.springframework.data/spring-data-mongodb/3.3.0/bd7f23d262721b6a0b83df4ae48a63875dfb7f35/spring-data-mongodb-3.3.0-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Gradle: org.springframework:spring-aop:5.3.13">
+      <CLASSES>
+        <root url="jar://$PROJECT_DIR$/../.gradle/caches/modules-2/files-2.1/org.springframework/spring-aop/5.3.13/e0fddf47af3fbbec69a403c058c23505612ca329/spring-aop-5.3.13.jar!/" />
+      </CLASSES>
+      <JAVADOC />
+      <SOURCES>
+        <root url="jar://$PROJECT_DIR$/../.gradle/caches/modules-2/files-2.1/org.springframework/spring-aop/5.3.13/e737cb88c5c739d130d1bbd767cbda63d8954641/spring-aop-5.3.13-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Gradle: org.springframework:spring-beans:5.3.13">
+      <CLASSES>
+        <root url="jar://$PROJECT_DIR$/../.gradle/caches/modules-2/files-2.1/org.springframework/spring-beans/5.3.13/1d90c96b287253ec371260c35fbbea719c24bad6/spring-beans-5.3.13.jar!/" />
+      </CLASSES>
+      <JAVADOC />
+      <SOURCES>
+        <root url="jar://$PROJECT_DIR$/../.gradle/caches/modules-2/files-2.1/org.springframework/spring-beans/5.3.13/ddd4df6d27eb3695492f3fc47fc270b6f8dce001/spring-beans-5.3.13-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Gradle: org.springframework:spring-context:5.3.13">
+      <CLASSES>
+        <root url="jar://$PROJECT_DIR$/../.gradle/caches/modules-2/files-2.1/org.springframework/spring-context/5.3.13/e328db1c30ffe1c58328e4ab42cd3855a5307469/spring-context-5.3.13.jar!/" />
+      </CLASSES>
+      <JAVADOC />
+      <SOURCES>
+        <root url="jar://$PROJECT_DIR$/../.gradle/caches/modules-2/files-2.1/org.springframework/spring-context/5.3.13/a6f2ad29fc2124e7eb22441e2c82b096d25a8e05/spring-context-5.3.13-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Gradle: org.springframework:spring-core:5.3.13">
+      <CLASSES>
+        <root url="jar://$PROJECT_DIR$/../.gradle/caches/modules-2/files-2.1/org.springframework/spring-core/5.3.13/d2a6c3372dd337e08144f9f49f386b8ec7a8080d/spring-core-5.3.13.jar!/" />
+      </CLASSES>
+      <JAVADOC />
+      <SOURCES>
+        <root url="jar://$PROJECT_DIR$/../.gradle/caches/modules-2/files-2.1/org.springframework/spring-core/5.3.13/3fee4911177ab3b3673a64ef0e5cf25e0d1b5a38/spring-core-5.3.13-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Gradle: org.springframework:spring-expression:5.3.13">
+      <CLASSES>
+        <root url="jar://$PROJECT_DIR$/../.gradle/caches/modules-2/files-2.1/org.springframework/spring-expression/5.3.13/8f7448f4fb296a92855fd0afea3375ce41061e84/spring-expression-5.3.13.jar!/" />
+      </CLASSES>
+      <JAVADOC />
+      <SOURCES>
+        <root url="jar://$PROJECT_DIR$/../.gradle/caches/modules-2/files-2.1/org.springframework/spring-expression/5.3.13/ba1d61de1799062448c1c682513671136c04f9fd/spring-expression-5.3.13-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Gradle: org.springframework:spring-jcl:5.3.13">
+      <CLASSES>
+        <root url="jar://$PROJECT_DIR$/../.gradle/caches/modules-2/files-2.1/org.springframework/spring-jcl/5.3.13/3aa15be194887fbda3912ecbb4ab6ec8dfdebdb0/spring-jcl-5.3.13.jar!/" />
+      </CLASSES>
+      <JAVADOC />
+      <SOURCES>
+        <root url="jar://$PROJECT_DIR$/../.gradle/caches/modules-2/files-2.1/org.springframework/spring-jcl/5.3.13/48e59686ad1a2dd39f4f1b3d6a63a7424091893a/spring-jcl-5.3.13-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Gradle: org.springframework:spring-test:5.3.13">
+      <CLASSES>
+        <root url="jar://$PROJECT_DIR$/../.gradle/caches/modules-2/files-2.1/org.springframework/spring-test/5.3.13/71d8c97d3f79e4399df223772190aaee19bbf197/spring-test-5.3.13.jar!/" />
+      </CLASSES>
+      <JAVADOC />
+      <SOURCES>
+        <root url="jar://$PROJECT_DIR$/../.gradle/caches/modules-2/files-2.1/org.springframework/spring-test/5.3.13/5e2b4524255ff2cb5c1db3b86814d486575f4a63/spring-test-5.3.13-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Gradle: org.springframework:spring-tx:5.3.13">
+      <CLASSES>
+        <root url="jar://$PROJECT_DIR$/../.gradle/caches/modules-2/files-2.1/org.springframework/spring-tx/5.3.13/4b7346f190d6a6f4b983bc23d1f0145c2ff2dbb7/spring-tx-5.3.13.jar!/" />
+      </CLASSES>
+      <JAVADOC />
+      <SOURCES>
+        <root url="jar://$PROJECT_DIR$/../.gradle/caches/modules-2/files-2.1/org.springframework/spring-tx/5.3.13/167c838362c646dcd83e5dc77ee5b5da8e77416c/spring-tx-5.3.13-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Gradle: org.springframework:spring-web:5.3.13">
+      <CLASSES>
+        <root url="jar://$PROJECT_DIR$/../.gradle/caches/modules-2/files-2.1/org.springframework/spring-web/5.3.13/66d95a5d2d436961b4cae036723f4c7a764fc14c/spring-web-5.3.13.jar!/" />
+      </CLASSES>
+      <JAVADOC />
+      <SOURCES>
+        <root url="jar://$PROJECT_DIR$/../.gradle/caches/modules-2/files-2.1/org.springframework/spring-web/5.3.13/b5a502f2450a025b5fe3508457688fd3037d4721/spring-web-5.3.13-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Gradle: org.springframework:spring-webmvc:5.3.13">
+      <CLASSES>
+        <root url="jar://$PROJECT_DIR$/../.gradle/caches/modules-2/files-2.1/org.springframework/spring-webmvc/5.3.13/cea31c85fa84dbd9f8df14a3ca62ab57c25cabe4/spring-webmvc-5.3.13.jar!/" />
+      </CLASSES>
+      <JAVADOC />
+      <SOURCES>
+        <root url="jar://$PROJECT_DIR$/../.gradle/caches/modules-2/files-2.1/org.springframework/spring-webmvc/5.3.13/1e9e88fe6a26b39d35de1fffc04f2c387d8f8512/spring-webmvc-5.3.13-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Gradle: org.webjars:swagger-ui:4.1.3">
+      <CLASSES>
+        <root url="jar://$PROJECT_DIR$/../.gradle/caches/modules-2/files-2.1/org.webjars/swagger-ui/4.1.3/7429f54d9bc7056a39ad61672a80fb1d97f1ee50/swagger-ui-4.1.3.jar!/" />
+      </CLASSES>
+      <JAVADOC />
+      <SOURCES />
+    </library>
+    <library name="Gradle: org.webjars:webjars-locator-core:0.48">
+      <CLASSES>
+        <root url="jar://$PROJECT_DIR$/../.gradle/caches/modules-2/files-2.1/org.webjars/webjars-locator-core/0.48/11f36ce080eb72348d93fd1fa441ec58cac6f69e/webjars-locator-core-0.48.jar!/" />
+      </CLASSES>
+      <JAVADOC />
+      <SOURCES>
+        <root url="jar://$PROJECT_DIR$/../.gradle/caches/modules-2/files-2.1/org.webjars/webjars-locator-core/0.48/26df17a2d3d3c4749e8b65d43c07f995dceb906e/webjars-locator-core-0.48-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Gradle: org.xmlunit:xmlunit-core:2.8.3">
+      <CLASSES>
+        <root url="jar://$PROJECT_DIR$/../.gradle/caches/modules-2/files-2.1/org.xmlunit/xmlunit-core/2.8.3/79be4916d0203c17944d0e891c2b17c555727af/xmlunit-core-2.8.3.jar!/" />
+      </CLASSES>
+      <JAVADOC />
+      <SOURCES>
+        <root url="jar://$PROJECT_DIR$/../.gradle/caches/modules-2/files-2.1/org.xmlunit/xmlunit-core/2.8.3/65237775784c9a6ff3ff5c4430ef07a941a5aa15/xmlunit-core-2.8.3-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Gradle: org.yaml:snakeyaml:1.29">
+      <CLASSES>
+        <root url="jar://$PROJECT_DIR$/../.gradle/caches/modules-2/files-2.1/org.yaml/snakeyaml/1.29/6d0cdafb2010f1297e574656551d7145240f6e25/snakeyaml-1.29.jar!/" />
+      </CLASSES>
+      <JAVADOC />
+      <SOURCES>
+        <root url="jar://$PROJECT_DIR$/../.gradle/caches/modules-2/files-2.1/org.yaml/snakeyaml/1.29/3c1e0863032828174271eb0b6a6db726e177db/snakeyaml-1.29-sources.jar!/" />
+      </SOURCES>
+    </library>
   </component>
   <component name="masterDetails">
     <states>
