@@ -1,0 +1,122 @@
+{
+	"models": {
+		"Order": {
+			"title": "Order",
+			"properties": {
+				"name": {
+					"type": "string",
+					"addedTime": 1674464662362
+				},
+				"orderId": {
+					"type": "string",
+					"addedTime": 1674464661434
+				},
+				"address": {
+					"type": "string",
+					"addedTime": 1674464666449
+				}
+			},
+			"key": "orderId",
+			"$id": "https://radical.sh/order/models/Order"
+		}
+	},
+	"actions": {
+		"models": {
+			"Order": {
+				"actions": {
+					"Delete": {
+						"apiEnabled": true,
+						"actionType": "sync",
+						"path": "/{orderId}",
+						"parameters": {},
+						"enabled": true
+					},
+					"Select": {
+						"enabled": true,
+						"apiEnabled": true,
+						"parameters": {
+							"name": {
+								"filterType": "EQ",
+								"isEnabled": true,
+								"type": "string"
+							},
+							"orderId": {
+								"filterType": "EQ",
+								"isEnabled": true,
+								"type": "string"
+							}
+						}
+					},
+					"Update": {
+						"apiEnabled": true,
+						"actionType": "sync",
+						"path": "/{orderId}",
+						"parameters": {},
+						"enabled": true
+					},
+					"Create": {
+						"apiEnabled": true,
+						"actionType": "sync",
+						"parameters": {},
+						"enabled": true
+					},
+					"Get": {
+						"apiEnabled": true,
+						"actionType": "sync",
+						"path": "/{orderId}",
+						"parameters": {},
+						"enabled": true
+					}
+				},
+				"path": "orders"
+			}
+		}
+	},
+	"project": {
+		"path": "/v1/",
+		"groupName": "sh.radical",
+		"build": {
+			"tool": "gradle"
+		},
+		"logger": {
+			"appenderConfig": {
+				"consoleAppender": {
+					"enabled": true
+				},
+				"fileAppender": {
+					"enabled": true
+				}
+			}
+		},
+		"health": {
+			"dependenciesHealthEnabled": true,
+			"enabled": true
+		},
+		"unitTests": {
+			"enabled": true
+		},
+		"packageName": "sh.radical.order",
+		"projectName": "order",
+		"repository": {
+			"mongo": {
+				"enabled": false
+			},
+			"postgress": {
+				"enabled": false
+			},
+			"mysql": {
+				"enabled": true
+			},
+			"enabled": true
+		},
+		"version": {
+			"org.springframework.boot": "2.6.0"
+		},
+		"swagger": {
+			"enabled": true
+		}
+	},
+	"config": {
+		"customProperties": ""
+	}
+}
