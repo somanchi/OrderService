@@ -6,9 +6,11 @@ import java.util.List;
 import com.querydsl.core.BooleanBuilder;
 import com.querydsl.core.types.Predicate;
 import com.querydsl.core.types.dsl.BooleanExpression;
+import com.querydsl.core.types.dsl.Expressions;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import sh.radical.order.entities.Context;
+import sh.radical.order.entities.Operation;
 import sh.radical.order.entities.SearchQuery;
 import sh.radical.order.exceptions.OrderNotFound;
 import sh.radical.order.inputs.CreateOrderInput;
@@ -52,7 +54,12 @@ public class OrderService {
     QOrder qOrder = new QOrder("order");
     BooleanBuilder booleanBuilder = new BooleanBuilder();
     for (SearchQuery query: searchQueries) {
-      booleanBuilder.and()
+      booleanBuilder.and(
+              Expressions.predicate(
+                      query.getOperation(),
+                      Expressions.stringPath(query.getQueryObject()),
+                      Expressions.constant(query.getValue())
+              ));
     }
     return new ArrayList();
   }
