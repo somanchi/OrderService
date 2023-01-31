@@ -2,6 +2,10 @@ package sh.radical.order.services;
 
 import java.util.ArrayList;
 import java.util.List;
+
+import com.querydsl.core.BooleanBuilder;
+import com.querydsl.core.types.Predicate;
+import com.querydsl.core.types.dsl.BooleanExpression;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import sh.radical.order.entities.Context;
@@ -11,6 +15,7 @@ import sh.radical.order.inputs.CreateOrderInput;
 import sh.radical.order.inputs.UpdateOrderInput;
 import sh.radical.order.mappers.OrderMapper;
 import sh.radical.order.models.Order;
+import sh.radical.order.models.QOrder;
 import sh.radical.order.repositories.OrderRepository;
 import sh.radical.order.utils.FilterParser;
 
@@ -44,9 +49,14 @@ public class OrderService {
     // validateFilters
 
     List<SearchQuery> searchQueries =  filterParser.getFilters(filters);
-
+    QOrder qOrder = new QOrder("order");
+    BooleanBuilder booleanBuilder = new BooleanBuilder();
+    for (SearchQuery query: searchQueries) {
+      booleanBuilder.and()
+    }
     return new ArrayList();
   }
+
 
   public Order update(
     Context context,
