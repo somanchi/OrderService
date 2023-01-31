@@ -616,15 +616,6 @@
         <root url="jar://$PROJECT_DIR$/../.gradle/caches/modules-2/files-2.1/org.mongodb/bson/4.4.0/e54859a3ec4d995414e36a6b3758aa908ac7931e/bson-4.4.0-sources.jar!/" />
       </SOURCES>
     </library>
-    <library name="Gradle: org.mongodb:mongo-java-driver:3.12.8">
-      <CLASSES>
-        <root url="jar://$PROJECT_DIR$/../.gradle/caches/modules-2/files-2.1/org.mongodb/mongo-java-driver/3.12.8/d9e12b2056cea964a3805558382e0d30596444c5/mongo-java-driver-3.12.8.jar!/" />
-      </CLASSES>
-      <JAVADOC />
-      <SOURCES>
-        <root url="jar://$PROJECT_DIR$/../.gradle/caches/modules-2/files-2.1/org.mongodb/mongo-java-driver/3.12.8/ee0fca17b51f6e2dce503a3250ed77e171991305/mongo-java-driver-3.12.8-sources.jar!/" />
-      </SOURCES>
-    </library>
     <library name="Gradle: org.mongodb:mongodb-driver-core:4.4.0">
       <CLASSES>
         <root url="jar://$PROJECT_DIR$/../.gradle/caches/modules-2/files-2.1/org.mongodb/mongodb-driver-core/4.4.0/e64a4cec513ad880c7945fb96b34871b875e1e48/mongodb-driver-core-4.4.0.jar!/" />
@@ -1008,6 +999,15 @@
       <JAVADOC />
       <SOURCES>
         <root url="jar://$PROJECT_DIR$/../.gradle/caches/modules-2/files-2.1/org.yaml/snakeyaml/1.29/3c1e0863032828174271eb0b6a6db726e177db/snakeyaml-1.29-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="mongoclient">
+      <CLASSES>
+        <root url="jar://$PROJECT_DIR$/../.gradle/caches/modules-2/files-2.1/ch.qos.logback/logback-classic/1.2.7/3e89a85545181f1a3a9efc9516ca92658502505b/logback-classic-1.2.7.jar!/" />
+      </CLASSES>
+      <JAVADOC />
+      <SOURCES>
+        <root url="jar://$PROJECT_DIR$/../.gradle/caches/modules-2/files-2.1/ch.qos.logback/logback-classic/1.2.7/3bad21efb8d5c9414a2cdd123f687d5697638aa1/logback-classic-1.2.7-sources.jar!/" />
       </SOURCES>
     </library>
   </component>
