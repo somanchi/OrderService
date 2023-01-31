@@ -14,7 +14,9 @@
     <facet type="jpa" name="JPA">
       <configuration>
         <setting name="validation-enabled" value="true" />
-        <datasource-mapping />
+        <datasource-mapping>
+          <factory-entry name="order.main" />
+        </datasource-mapping>
         <naming-strategy-map />
       </configuration>
     </facet>
@@ -38,16 +40,13 @@
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="library" scope="PROVIDED" name="Gradle: org.projectlombok:lombok:1.18.22" level="project" />
-    <orderEntry type="library" scope="PROVIDED" name="Gradle: com.querydsl:querydsl-mongodb:5.0.0" level="project" />
-    <orderEntry type="library" scope="PROVIDED" name="Gradle: com.querydsl:querydsl-apt:5.0.0" level="project" />
     <orderEntry type="library" name="Gradle: org.springframework.boot:spring-boot-starter-web:2.6.0" level="project" />
     <orderEntry type="library" name="Gradle: org.springframework.boot:spring-boot-starter-validation:2.6.0" level="project" />
     <orderEntry type="library" name="Gradle: org.springframework.boot:spring-boot-starter-data-mongodb:2.6.0" level="project" />
     <orderEntry type="library" name="Gradle: org.springframework.boot:spring-boot-starter-actuator:2.6.0" level="project" />
     <orderEntry type="library" name="Gradle: org.springdoc:springdoc-openapi-ui:1.6.4" level="project" />
-    <orderEntry type="library" scope="PROVIDED" name="Gradle: org.mongodb:mongo-java-driver:3.12.8" level="project" />
-    <orderEntry type="library" scope="PROVIDED" name="Gradle: com.querydsl:querydsl-core:5.0.0" level="project" />
-    <orderEntry type="library" scope="PROVIDED" name="Gradle: com.querydsl:querydsl-codegen:5.0.0" level="project" />
+    <orderEntry type="library" name="Gradle: com.querydsl:querydsl-mongodb:5.0.0" level="project" />
+    <orderEntry type="library" name="Gradle: com.querydsl:querydsl-apt:5.0.0" level="project" />
     <orderEntry type="library" name="Gradle: org.springframework.boot:spring-boot-starter-json:2.6.0" level="project" />
     <orderEntry type="library" name="Gradle: org.springframework.boot:spring-boot-starter:2.6.0" level="project" />
     <orderEntry type="library" name="Gradle: org.springframework.boot:spring-boot-starter-tomcat:2.6.0" level="project" />
@@ -63,9 +62,9 @@
     <orderEntry type="library" name="Gradle: org.webjars:swagger-ui:4.1.3" level="project" />
     <orderEntry type="library" name="Gradle: org.webjars:webjars-locator-core:0.48" level="project" />
     <orderEntry type="library" name="Gradle: io.github.classgraph:classgraph:4.8.138" level="project" />
-    <orderEntry type="library" scope="PROVIDED" name="Gradle: com.mysema.commons:mysema-commons-lang:0.2.4" level="project" />
-    <orderEntry type="library" scope="PROVIDED" name="Gradle: com.querydsl:codegen-utils:5.0.0" level="project" />
-    <orderEntry type="library" scope="PROVIDED" name="Gradle: javax.inject:javax.inject:1" level="project" />
+    <orderEntry type="library" name="Gradle: org.mongodb:mongo-java-driver:3.12.8" level="project" />
+    <orderEntry type="library" name="Gradle: com.querydsl:querydsl-core:5.0.0" level="project" />
+    <orderEntry type="library" name="Gradle: com.querydsl:querydsl-codegen:5.0.0" level="project" />
     <orderEntry type="library" name="Gradle: com.fasterxml.jackson.datatype:jackson-datatype-jdk8:2.13.0" level="project" />
     <orderEntry type="library" name="Gradle: com.fasterxml.jackson.datatype:jackson-datatype-jsr310:2.13.0" level="project" />
     <orderEntry type="library" name="Gradle: com.fasterxml.jackson.module:jackson-module-parameter-names:2.13.0" level="project" />
@@ -94,13 +93,16 @@
     <orderEntry type="library" name="Gradle: org.hdrhistogram:HdrHistogram:2.1.12" level="project" />
     <orderEntry type="library" name="Gradle: org.springdoc:springdoc-openapi-common:1.6.4" level="project" />
     <orderEntry type="library" name="Gradle: com.fasterxml.jackson.core:jackson-core:2.13.0" level="project" />
-    <orderEntry type="library" scope="PROVIDED" name="Gradle: org.eclipse.jdt:ecj:3.26.0" level="project" />
+    <orderEntry type="library" name="Gradle: com.mysema.commons:mysema-commons-lang:0.2.4" level="project" />
+    <orderEntry type="library" name="Gradle: com.querydsl:codegen-utils:5.0.0" level="project" />
+    <orderEntry type="library" name="Gradle: javax.inject:javax.inject:1" level="project" />
     <orderEntry type="library" name="Gradle: com.fasterxml.jackson.core:jackson-annotations:2.13.0" level="project" />
     <orderEntry type="library" name="Gradle: ch.qos.logback:logback-classic:1.2.7" level="project" />
     <orderEntry type="library" name="Gradle: org.apache.logging.log4j:log4j-to-slf4j:2.14.1" level="project" />
     <orderEntry type="library" name="Gradle: org.slf4j:jul-to-slf4j:1.7.32" level="project" />
     <orderEntry type="library" name="Gradle: org.springframework:spring-jcl:5.3.13" level="project" />
     <orderEntry type="library" name="Gradle: io.swagger.core.v3:swagger-core:2.1.12" level="project" />
+    <orderEntry type="library" name="Gradle: org.eclipse.jdt:ecj:3.26.0" level="project" />
     <orderEntry type="library" name="Gradle: ch.qos.logback:logback-core:1.2.7" level="project" />
     <orderEntry type="library" name="Gradle: org.apache.logging.log4j:log4j-api:2.14.1" level="project" />
     <orderEntry type="library" name="Gradle: io.swagger.core.v3:swagger-models:2.1.12" level="project" />

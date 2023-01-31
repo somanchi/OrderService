@@ -27,7 +27,7 @@ public class OrderQueryController {
     @RequestParam(value = "filters") String filters
   ) {
     Context context = new Context();
-    List<Order> existingorders = orderService.getByNameAndOrderId(
+    List<Order> existingorders = orderService.getAll(
       context,
       filters
     );

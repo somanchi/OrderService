@@ -1,16 +1,11 @@
 package sh.radical.order.services;
 
-import java.util.ArrayList;
-import java.util.List;
-
 import com.querydsl.core.BooleanBuilder;
-import com.querydsl.core.types.Predicate;
-import com.querydsl.core.types.dsl.BooleanExpression;
 import com.querydsl.core.types.dsl.Expressions;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import sh.radical.order.entities.Context;
-import sh.radical.order.entities.Operation;
 import sh.radical.order.entities.SearchQuery;
 import sh.radical.order.exceptions.OrderNotFound;
 import sh.radical.order.inputs.CreateOrderInput;
@@ -21,7 +16,10 @@ import sh.radical.order.models.QOrder;
 import sh.radical.order.repositories.OrderRepository;
 import sh.radical.order.utils.FilterParser;
 
+import java.util.List;
+
 @Service
+@Slf4j
 public class OrderService {
 
   @Autowired
@@ -42,14 +40,14 @@ public class OrderService {
     orderRepository.deleteById(orderId);
   }
 
-  public List getByNameAndOrderId(
+  public List getAll(
     Context context,
     String filters
   ) {
 
     // parseFilters
     // validateFilters
-
+    log.info("inside findAll service method");
     List<SearchQuery> searchQueries =  filterParser.getFilters(filters);
     QOrder qOrder = new QOrder("order");
     BooleanBuilder booleanBuilder = new BooleanBuilder();
@@ -61,7 +59,8 @@ public class OrderService {
                       Expressions.constant(query.getValue())
               ));
     }
-    return new ArrayList();
+    System.out.println(booleanBuilder);
+    return (List<Order>) orderRepository.findAll(booleanBuilder);
   }
 
 
