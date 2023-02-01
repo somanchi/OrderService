@@ -23,7 +23,7 @@ public class OrderQueryController {
   OrderService orderService;
 
   @GetMapping
-  public List selectAllByNameAndOrderId(
+  public List<Order> selectAll(
     @RequestParam(value = "filters") String filters
   ) {
     Context context = new Context();

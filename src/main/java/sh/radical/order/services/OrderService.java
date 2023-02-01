@@ -12,7 +12,6 @@ import sh.radical.order.inputs.CreateOrderInput;
 import sh.radical.order.inputs.UpdateOrderInput;
 import sh.radical.order.mappers.OrderMapper;
 import sh.radical.order.models.Order;
-import sh.radical.order.models.QOrder;
 import sh.radical.order.repositories.OrderRepository;
 import sh.radical.order.utils.FilterParser;
 
@@ -49,7 +48,6 @@ public class OrderService {
     // validateFilters
     log.info("inside findAll service method");
     List<SearchQuery> searchQueries =  filterParser.getFilters(filters);
-    QOrder qOrder = new QOrder("order");
     BooleanBuilder booleanBuilder = new BooleanBuilder();
     for (SearchQuery query: searchQueries) {
       booleanBuilder.and(
@@ -59,7 +57,7 @@ public class OrderService {
                       Expressions.constant(query.getValue())
               ));
     }
-    System.out.println(booleanBuilder);
+
     return (List<Order>) orderRepository.findAll(booleanBuilder);
   }
 
