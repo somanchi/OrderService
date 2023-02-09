@@ -1,124 +1,61 @@
-2023-02-08 16:00:57.942 [background-preinit] [INFO] [o.h.validator.internal.util.Version] - HV000001: Hibernate Validator 6.2.0.Final
-2023-02-08 16:00:57.947 [main] [INFO] [sh.radical.order.OrderApplication] - Starting OrderApplication using Java 17.0.5 on saiprasadsomanchis-MacBook-Pro.local with PID 44402 (/Users/saiprasadsomanchi/OrderService/build/classes/java/main started by saiprasadsomanchi in /Users/saiprasadsomanchi/OrderService)
-2023-02-08 16:00:57.947 [main] [INFO] [sh.radical.order.OrderApplication] - No active profile set, falling back to default profiles: default
-2023-02-08 16:00:58.330 [main] [INFO] [o.s.d.r.c.RepositoryConfigurationDelegate] - Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
-2023-02-08 16:00:58.351 [main] [INFO] [o.s.d.r.c.RepositoryConfigurationDelegate] - Finished Spring Data repository scanning in 19 ms. Found 1 MongoDB repository interfaces.
-2023-02-08 16:00:58.543 [main] [INFO] [o.s.b.w.e.tomcat.TomcatWebServer] - Tomcat initialized with port(s): 8080 (http)
-2023-02-08 16:00:58.549 [main] [INFO] [o.a.coyote.http11.Http11NioProtocol] - Initializing ProtocolHandler ["http-nio-8080"]
-2023-02-08 16:00:58.549 [main] [INFO] [o.a.catalina.core.StandardService] - Starting service [Tomcat]
-2023-02-08 16:00:58.549 [main] [INFO] [o.a.catalina.core.StandardEngine] - Starting Servlet engine: [Apache Tomcat/9.0.55]
-2023-02-08 16:00:58.586 [main] [INFO] [o.a.c.c.C.[Tomcat].[localhost].[/]] - Initializing Spring embedded WebApplicationContext
-2023-02-08 16:00:58.586 [main] [INFO] [o.s.b.w.s.c.ServletWebServerApplicationContext] - Root WebApplicationContext: initialization completed in 614 ms
-2023-02-08 16:00:58.677 [main] [INFO] [org.mongodb.driver.cluster] - Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms'}
-2023-02-08 16:00:58.787 [cluster-rtt-ClusterId{value='63e379e2dc975b6e7cb6428d', description='null'}-localhost:27017] [INFO] [org.mongodb.driver.connection] - Opened connection [connectionId{localValue:2, serverValue:38}] to localhost:27017
-2023-02-08 16:00:58.787 [cluster-ClusterId{value='63e379e2dc975b6e7cb6428d', description='null'}-localhost:27017] [INFO] [org.mongodb.driver.connection] - Opened connection [connectionId{localValue:1, serverValue:37}] to localhost:27017
-2023-02-08 16:00:58.788 [cluster-ClusterId{value='63e379e2dc975b6e7cb6428d', description='null'}-localhost:27017] [INFO] [org.mongodb.driver.cluster] - Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=17, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=49689000}
-2023-02-08 16:00:59.166 [main] [INFO] [o.a.coyote.http11.Http11NioProtocol] - Starting ProtocolHandler ["http-nio-8080"]
-2023-02-08 16:00:59.173 [main] [INFO] [o.s.b.w.e.tomcat.TomcatWebServer] - Tomcat started on port(s): 8080 (http) with context path ''
-2023-02-08 16:00:59.196 [main] [INFO] [o.s.b.w.e.tomcat.TomcatWebServer] - Tomcat initialized with port(s): 8081 (http)
-2023-02-08 16:00:59.197 [main] [INFO] [o.a.coyote.http11.Http11NioProtocol] - Initializing ProtocolHandler ["http-nio-8081"]
-2023-02-08 16:00:59.197 [main] [INFO] [o.a.catalina.core.StandardService] - Starting service [Tomcat]
-2023-02-08 16:00:59.197 [main] [INFO] [o.a.catalina.core.StandardEngine] - Starting Servlet engine: [Apache Tomcat/9.0.55]
-2023-02-08 16:00:59.203 [main] [INFO] [o.a.c.c.C.[Tomcat-1].[localhost].[/]] - Initializing Spring embedded WebApplicationContext
-2023-02-08 16:00:59.203 [main] [INFO] [o.s.b.w.s.c.ServletWebServerApplicationContext] - Root WebApplicationContext: initialization completed in 29 ms
-2023-02-08 16:00:59.208 [main] [INFO] [o.s.b.a.e.web.EndpointLinksResolver] - Exposing 3 endpoint(s) beneath base path '/actuator'
-2023-02-08 16:00:59.288 [main] [INFO] [o.a.coyote.http11.Http11NioProtocol] - Starting ProtocolHandler ["http-nio-8081"]
-2023-02-08 16:00:59.289 [main] [INFO] [o.s.b.w.e.tomcat.TomcatWebServer] - Tomcat started on port(s): 8081 (http) with context path ''
-2023-02-08 16:00:59.296 [main] [INFO] [sh.radical.order.OrderApplication] - Started OrderApplication in 6.548 seconds (JVM running for 6.69)
-2023-02-08 16:08:26.800 [background-preinit] [INFO] [o.h.validator.internal.util.Version] - HV000001: Hibernate Validator 6.2.0.Final
-2023-02-08 16:08:26.819 [main] [INFO] [sh.radical.order.OrderApplication] - Starting OrderApplication using Java 17.0.4 on saiprasadsomanchis-MacBook-Pro.local with PID 50307 (/Users/saiprasadsomanchi/OrderService/build/classes/java/main started by saiprasadsomanchi in /Users/saiprasadsomanchi/OrderService)
-2023-02-08 16:08:26.820 [main] [INFO] [sh.radical.order.OrderApplication] - No active profile set, falling back to default profiles: default
-2023-02-08 16:08:28.162 [main] [INFO] [o.s.d.r.c.RepositoryConfigurationDelegate] - Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
-2023-02-08 16:08:28.230 [main] [INFO] [o.s.d.r.c.RepositoryConfigurationDelegate] - Finished Spring Data repository scanning in 64 ms. Found 1 MongoDB repository interfaces.
-2023-02-08 16:08:28.835 [main] [INFO] [o.s.b.w.e.tomcat.TomcatWebServer] - Tomcat initialized with port(s): 8080 (http)
-2023-02-08 16:08:28.846 [main] [INFO] [o.a.coyote.http11.Http11NioProtocol] - Initializing ProtocolHandler ["http-nio-8080"]
-2023-02-08 16:08:28.846 [main] [INFO] [o.a.catalina.core.StandardService] - Starting service [Tomcat]
-2023-02-08 16:08:28.846 [main] [INFO] [o.a.catalina.core.StandardEngine] - Starting Servlet engine: [Apache Tomcat/9.0.55]
-2023-02-08 16:08:28.925 [main] [INFO] [o.a.c.c.C.[Tomcat].[localhost].[/]] - Initializing Spring embedded WebApplicationContext
-2023-02-08 16:08:28.926 [main] [INFO] [o.s.b.w.s.c.ServletWebServerApplicationContext] - Root WebApplicationContext: initialization completed in 2004 ms
-2023-02-08 16:08:29.439 [main] [INFO] [org.mongodb.driver.cluster] - Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms'}
-2023-02-08 16:08:29.557 [cluster-ClusterId{value='63e37ba541e5624c41f6b679', description='null'}-localhost:27017] [INFO] [org.mongodb.driver.connection] - Opened connection [connectionId{localValue:2, serverValue:40}] to localhost:27017
-2023-02-08 16:08:29.557 [cluster-rtt-ClusterId{value='63e37ba541e5624c41f6b679', description='null'}-localhost:27017] [INFO] [org.mongodb.driver.connection] - Opened connection [connectionId{localValue:1, serverValue:39}] to localhost:27017
-2023-02-08 16:08:29.558 [cluster-ClusterId{value='63e37ba541e5624c41f6b679', description='null'}-localhost:27017] [INFO] [org.mongodb.driver.cluster] - Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=17, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=43511958}
-2023-02-08 16:08:30.840 [main] [INFO] [o.a.coyote.http11.Http11NioProtocol] - Starting ProtocolHandler ["http-nio-8080"]
-2023-02-08 16:08:30.854 [main] [INFO] [o.s.b.w.e.tomcat.TomcatWebServer] - Tomcat started on port(s): 8080 (http) with context path ''
-2023-02-08 16:08:30.951 [main] [INFO] [o.s.b.w.e.tomcat.TomcatWebServer] - Tomcat initialized with port(s): 8081 (http)
-2023-02-08 16:08:30.952 [main] [INFO] [o.a.coyote.http11.Http11NioProtocol] - Initializing ProtocolHandler ["http-nio-8081"]
-2023-02-08 16:08:30.952 [main] [INFO] [o.a.catalina.core.StandardService] - Starting service [Tomcat]
-2023-02-08 16:08:30.952 [main] [INFO] [o.a.catalina.core.StandardEngine] - Starting Servlet engine: [Apache Tomcat/9.0.55]
-2023-02-08 16:08:30.968 [main] [INFO] [o.a.c.c.C.[Tomcat-1].[localhost].[/]] - Initializing Spring embedded WebApplicationContext
-2023-02-08 16:08:30.970 [main] [INFO] [o.s.b.w.s.c.ServletWebServerApplicationContext] - Root WebApplicationContext: initialization completed in 112 ms
-2023-02-08 16:08:30.984 [main] [INFO] [o.s.b.a.e.web.EndpointLinksResolver] - Exposing 3 endpoint(s) beneath base path '/actuator'
-2023-02-08 16:08:31.238 [main] [INFO] [o.a.coyote.http11.Http11NioProtocol] - Starting ProtocolHandler ["http-nio-8081"]
-2023-02-08 16:08:31.240 [main] [INFO] [o.s.b.w.e.tomcat.TomcatWebServer] - Tomcat started on port(s): 8081 (http) with context path ''
-2023-02-08 16:08:31.260 [main] [INFO] [sh.radical.order.OrderApplication] - Started OrderApplication in 9.971 seconds (JVM running for 10.664)
-2023-02-08 16:09:35.730 [http-nio-8080-exec-1] [INFO] [o.a.c.c.C.[Tomcat].[localhost].[/]] - Initializing Spring DispatcherServlet 'dispatcherServlet'
-2023-02-08 16:09:35.732 [http-nio-8080-exec-1] [INFO] [o.s.web.servlet.DispatcherServlet] - Initializing Servlet 'dispatcherServlet'
-2023-02-08 16:09:35.736 [http-nio-8080-exec-1] [INFO] [o.s.web.servlet.DispatcherServlet] - Completed initialization in 4 ms
-2023-02-08 16:10:01.177 [http-nio-8080-exec-1] [INFO] [o.s.api.AbstractOpenApiResource] - Init duration for springdoc-openapi is: 235 ms
-2023-02-08 16:10:18.728 [http-nio-8080-exec-2] [INFO] [s.r.o.c.OrderQueryController] - finding all orders with filters: name:eq:sai and sorBy: +name
-2023-02-08 16:10:18.731 [http-nio-8080-exec-2] [INFO] [s.r.order.services.OrderService] - inside findAll service method
-2023-02-08 16:11:49.002 [background-preinit] [INFO] [o.h.validator.internal.util.Version] - HV000001: Hibernate Validator 6.2.0.Final
-2023-02-08 16:11:49.008 [main] [INFO] [sh.radical.order.OrderApplication] - Starting OrderApplication using Java 17.0.4 on saiprasadsomanchis-MacBook-Pro.local with PID 52570 (/Users/saiprasadsomanchi/OrderService/build/classes/java/main started by saiprasadsomanchi in /Users/saiprasadsomanchi/OrderService)
-2023-02-08 16:11:49.008 [main] [INFO] [sh.radical.order.OrderApplication] - No active profile set, falling back to default profiles: default
-2023-02-08 16:11:50.070 [main] [INFO] [o.s.d.r.c.RepositoryConfigurationDelegate] - Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
-2023-02-08 16:11:50.131 [main] [INFO] [o.s.d.r.c.RepositoryConfigurationDelegate] - Finished Spring Data repository scanning in 57 ms. Found 1 MongoDB repository interfaces.
-2023-02-08 16:11:50.628 [main] [INFO] [o.s.b.w.e.tomcat.TomcatWebServer] - Tomcat initialized with port(s): 8080 (http)
-2023-02-08 16:11:50.637 [main] [INFO] [o.a.coyote.http11.Http11NioProtocol] - Initializing ProtocolHandler ["http-nio-8080"]
-2023-02-08 16:11:50.638 [main] [INFO] [o.a.catalina.core.StandardService] - Starting service [Tomcat]
-2023-02-08 16:11:50.638 [main] [INFO] [o.a.catalina.core.StandardEngine] - Starting Servlet engine: [Apache Tomcat/9.0.55]
-2023-02-08 16:11:50.711 [main] [INFO] [o.a.c.c.C.[Tomcat].[localhost].[/]] - Initializing Spring embedded WebApplicationContext
-2023-02-08 16:11:50.711 [main] [INFO] [o.s.b.w.s.c.ServletWebServerApplicationContext] - Root WebApplicationContext: initialization completed in 1636 ms
-2023-02-08 16:11:50.965 [main] [INFO] [org.mongodb.driver.cluster] - Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms'}
-2023-02-08 16:11:51.078 [cluster-rtt-ClusterId{value='63e37c6e48cd5033fb367ce1', description='null'}-localhost:27017] [INFO] [org.mongodb.driver.connection] - Opened connection [connectionId{localValue:1, serverValue:42}] to localhost:27017
-2023-02-08 16:11:51.079 [cluster-ClusterId{value='63e37c6e48cd5033fb367ce1', description='null'}-localhost:27017] [INFO] [org.mongodb.driver.connection] - Opened connection [connectionId{localValue:2, serverValue:41}] to localhost:27017
-2023-02-08 16:11:51.080 [cluster-ClusterId{value='63e37c6e48cd5033fb367ce1', description='null'}-localhost:27017] [INFO] [org.mongodb.driver.cluster] - Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=17, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=33847667}
-2023-02-08 16:11:52.247 [main] [INFO] [o.a.coyote.http11.Http11NioProtocol] - Starting ProtocolHandler ["http-nio-8080"]
-2023-02-08 16:11:52.261 [main] [INFO] [o.s.b.w.e.tomcat.TomcatWebServer] - Tomcat started on port(s): 8080 (http) with context path ''
-2023-02-08 16:11:52.358 [main] [INFO] [o.s.b.w.e.tomcat.TomcatWebServer] - Tomcat initialized with port(s): 8081 (http)
-2023-02-08 16:11:52.359 [main] [INFO] [o.a.coyote.http11.Http11NioProtocol] - Initializing ProtocolHandler ["http-nio-8081"]
-2023-02-08 16:11:52.360 [main] [INFO] [o.a.catalina.core.StandardService] - Starting service [Tomcat]
-2023-02-08 16:11:52.360 [main] [INFO] [o.a.catalina.core.StandardEngine] - Starting Servlet engine: [Apache Tomcat/9.0.55]
-2023-02-08 16:11:52.373 [main] [INFO] [o.a.c.c.C.[Tomcat-1].[localhost].[/]] - Initializing Spring embedded WebApplicationContext
-2023-02-08 16:11:52.377 [main] [INFO] [o.s.b.w.s.c.ServletWebServerApplicationContext] - Root WebApplicationContext: initialization completed in 113 ms
-2023-02-08 16:11:52.391 [main] [INFO] [o.s.b.a.e.web.EndpointLinksResolver] - Exposing 3 endpoint(s) beneath base path '/actuator'
-2023-02-08 16:11:52.667 [main] [INFO] [o.a.coyote.http11.Http11NioProtocol] - Starting ProtocolHandler ["http-nio-8081"]
-2023-02-08 16:11:52.669 [main] [INFO] [o.s.b.w.e.tomcat.TomcatWebServer] - Tomcat started on port(s): 8081 (http) with context path ''
-2023-02-08 16:11:52.688 [main] [INFO] [sh.radical.order.OrderApplication] - Started OrderApplication in 9.163 seconds (JVM running for 9.621)
-2023-02-08 16:11:59.047 [http-nio-8080-exec-1] [INFO] [o.a.c.c.C.[Tomcat].[localhost].[/]] - Initializing Spring DispatcherServlet 'dispatcherServlet'
-2023-02-08 16:11:59.049 [http-nio-8080-exec-1] [INFO] [o.s.web.servlet.DispatcherServlet] - Initializing Servlet 'dispatcherServlet'
-2023-02-08 16:11:59.050 [http-nio-8080-exec-1] [INFO] [o.s.web.servlet.DispatcherServlet] - Completed initialization in 1 ms
-2023-02-08 16:11:59.118 [http-nio-8080-exec-1] [INFO] [s.r.o.c.OrderQueryController] - finding all orders with filters: name:eq:sai and sorBy: +name
-2023-02-08 16:11:59.122 [http-nio-8080-exec-1] [INFO] [s.r.order.services.OrderService] - inside findAll service method
-2023-02-08 16:15:06.808 [background-preinit] [INFO] [o.h.validator.internal.util.Version] - HV000001: Hibernate Validator 6.2.0.Final
-2023-02-08 16:15:06.815 [main] [INFO] [sh.radical.order.OrderApplication] - Starting OrderApplication using Java 17.0.4 on saiprasadsomanchis-MacBook-Pro.local with PID 54755 (/Users/saiprasadsomanchi/OrderService/build/classes/java/main started by saiprasadsomanchi in /Users/saiprasadsomanchi/OrderService)
-2023-02-08 16:15:06.816 [main] [INFO] [sh.radical.order.OrderApplication] - No active profile set, falling back to default profiles: default
-2023-02-08 16:15:07.883 [main] [INFO] [o.s.d.r.c.RepositoryConfigurationDelegate] - Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
-2023-02-08 16:15:07.942 [main] [INFO] [o.s.d.r.c.RepositoryConfigurationDelegate] - Finished Spring Data repository scanning in 56 ms. Found 1 MongoDB repository interfaces.
-2023-02-08 16:15:08.435 [main] [INFO] [o.s.b.w.e.tomcat.TomcatWebServer] - Tomcat initialized with port(s): 8080 (http)
-2023-02-08 16:15:08.444 [main] [INFO] [o.a.coyote.http11.Http11NioProtocol] - Initializing ProtocolHandler ["http-nio-8080"]
-2023-02-08 16:15:08.445 [main] [INFO] [o.a.catalina.core.StandardService] - Starting service [Tomcat]
-2023-02-08 16:15:08.445 [main] [INFO] [o.a.catalina.core.StandardEngine] - Starting Servlet engine: [Apache Tomcat/9.0.55]
-2023-02-08 16:15:08.511 [main] [INFO] [o.a.c.c.C.[Tomcat].[localhost].[/]] - Initializing Spring embedded WebApplicationContext
-2023-02-08 16:15:08.512 [main] [INFO] [o.s.b.w.s.c.ServletWebServerApplicationContext] - Root WebApplicationContext: initialization completed in 1633 ms
-2023-02-08 16:15:08.789 [main] [INFO] [org.mongodb.driver.cluster] - Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms'}
-2023-02-08 16:15:08.908 [cluster-ClusterId{value='63e37d3451be1c15c710d3fe', description='null'}-localhost:27017] [INFO] [org.mongodb.driver.connection] - Opened connection [connectionId{localValue:1, serverValue:44}] to localhost:27017
-2023-02-08 16:15:08.908 [cluster-rtt-ClusterId{value='63e37d3451be1c15c710d3fe', description='null'}-localhost:27017] [INFO] [org.mongodb.driver.connection] - Opened connection [connectionId{localValue:2, serverValue:43}] to localhost:27017
-2023-02-08 16:15:08.909 [cluster-ClusterId{value='63e37d3451be1c15c710d3fe', description='null'}-localhost:27017] [INFO] [org.mongodb.driver.cluster] - Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=17, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=44827958}
-2023-02-08 16:15:10.080 [main] [INFO] [o.a.coyote.http11.Http11NioProtocol] - Starting ProtocolHandler ["http-nio-8080"]
-2023-02-08 16:15:10.093 [main] [INFO] [o.s.b.w.e.tomcat.TomcatWebServer] - Tomcat started on port(s): 8080 (http) with context path ''
-2023-02-08 16:15:10.181 [main] [INFO] [o.s.b.w.e.tomcat.TomcatWebServer] - Tomcat initialized with port(s): 8081 (http)
-2023-02-08 16:15:10.184 [main] [INFO] [o.a.coyote.http11.Http11NioProtocol] - Initializing ProtocolHandler ["http-nio-8081"]
-2023-02-08 16:15:10.185 [main] [INFO] [o.a.catalina.core.StandardService] - Starting service [Tomcat]
-2023-02-08 16:15:10.186 [main] [INFO] [o.a.catalina.core.StandardEngine] - Starting Servlet engine: [Apache Tomcat/9.0.55]
-2023-02-08 16:15:10.198 [main] [INFO] [o.a.c.c.C.[Tomcat-1].[localhost].[/]] - Initializing Spring embedded WebApplicationContext
-2023-02-08 16:15:10.198 [main] [INFO] [o.s.b.w.s.c.ServletWebServerApplicationContext] - Root WebApplicationContext: initialization completed in 101 ms
-2023-02-08 16:15:10.212 [main] [INFO] [o.s.b.a.e.web.EndpointLinksResolver] - Exposing 3 endpoint(s) beneath base path '/actuator'
-2023-02-08 16:15:10.472 [main] [INFO] [o.a.coyote.http11.Http11NioProtocol] - Starting ProtocolHandler ["http-nio-8081"]
-2023-02-08 16:15:10.473 [main] [INFO] [o.s.b.w.e.tomcat.TomcatWebServer] - Tomcat started on port(s): 8081 (http) with context path ''
-2023-02-08 16:15:10.488 [main] [INFO] [sh.radical.order.OrderApplication] - Started OrderApplication in 9.15 seconds (JVM running for 9.663)
-2023-02-08 16:15:14.272 [http-nio-8080-exec-1] [INFO] [o.a.c.c.C.[Tomcat].[localhost].[/]] - Initializing Spring DispatcherServlet 'dispatcherServlet'
-2023-02-08 16:15:14.277 [http-nio-8080-exec-1] [INFO] [o.s.web.servlet.DispatcherServlet] - Initializing Servlet 'dispatcherServlet'
-2023-02-08 16:15:14.310 [http-nio-8080-exec-1] [INFO] [o.s.web.servlet.DispatcherServlet] - Completed initialization in 33 ms
-2023-02-08 16:15:14.431 [http-nio-8080-exec-1] [INFO] [s.r.o.c.OrderQueryController] - finding all orders with filters: name:eq:sai and sorBy: +name
-2023-02-08 16:15:14.435 [http-nio-8080-exec-1] [INFO] [s.r.order.services.OrderService] - inside findAll service method
+2023-02-09 17:39:28.542 [background-preinit] [INFO] [o.h.validator.internal.util.Version] - HV000001: Hibernate Validator 6.2.0.Final
+2023-02-09 17:39:28.548 [main] [INFO] [sh.radical.order.OrderApplication] - Starting OrderApplication using Java 17.0.5 on saiprasadsomanchis-MacBook-Pro.local with PID 71433 (/Users/saiprasadsomanchi/OrderService/build/classes/java/main started by saiprasadsomanchi in /Users/saiprasadsomanchi/OrderService)
+2023-02-09 17:39:28.549 [main] [INFO] [sh.radical.order.OrderApplication] - No active profile set, falling back to default profiles: default
+2023-02-09 17:39:28.901 [main] [INFO] [o.s.d.r.c.RepositoryConfigurationDelegate] - Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2023-02-09 17:39:28.922 [main] [INFO] [o.s.d.r.c.RepositoryConfigurationDelegate] - Finished Spring Data repository scanning in 20 ms. Found 1 MongoDB repository interfaces.
+2023-02-09 17:39:29.114 [main] [INFO] [o.s.b.w.e.tomcat.TomcatWebServer] - Tomcat initialized with port(s): 8080 (http)
+2023-02-09 17:39:29.120 [main] [INFO] [o.a.coyote.http11.Http11NioProtocol] - Initializing ProtocolHandler ["http-nio-8080"]
+2023-02-09 17:39:29.120 [main] [INFO] [o.a.catalina.core.StandardService] - Starting service [Tomcat]
+2023-02-09 17:39:29.121 [main] [INFO] [o.a.catalina.core.StandardEngine] - Starting Servlet engine: [Apache Tomcat/9.0.55]
+2023-02-09 17:39:29.158 [main] [INFO] [o.a.c.c.C.[Tomcat].[localhost].[/]] - Initializing Spring embedded WebApplicationContext
+2023-02-09 17:39:29.158 [main] [INFO] [o.s.b.w.s.c.ServletWebServerApplicationContext] - Root WebApplicationContext: initialization completed in 589 ms
+2023-02-09 17:39:29.265 [main] [INFO] [org.mongodb.driver.cluster] - Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms'}
+2023-02-09 17:39:29.360 [cluster-rtt-ClusterId{value='63e4e279604a757d2a618285', description='null'}-localhost:27017] [INFO] [org.mongodb.driver.connection] - Opened connection [connectionId{localValue:1, serverValue:45}] to localhost:27017
+2023-02-09 17:39:29.360 [cluster-ClusterId{value='63e4e279604a757d2a618285', description='null'}-localhost:27017] [INFO] [org.mongodb.driver.connection] - Opened connection [connectionId{localValue:2, serverValue:46}] to localhost:27017
+2023-02-09 17:39:29.360 [cluster-ClusterId{value='63e4e279604a757d2a618285', description='null'}-localhost:27017] [INFO] [org.mongodb.driver.cluster] - Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=17, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=39341167}
+2023-02-09 17:39:29.750 [main] [INFO] [o.a.coyote.http11.Http11NioProtocol] - Starting ProtocolHandler ["http-nio-8080"]
+2023-02-09 17:39:29.757 [main] [INFO] [o.s.b.w.e.tomcat.TomcatWebServer] - Tomcat started on port(s): 8080 (http) with context path ''
+2023-02-09 17:39:29.784 [main] [INFO] [o.s.b.w.e.tomcat.TomcatWebServer] - Tomcat initialized with port(s): 8081 (http)
+2023-02-09 17:39:29.784 [main] [INFO] [o.a.coyote.http11.Http11NioProtocol] - Initializing ProtocolHandler ["http-nio-8081"]
+2023-02-09 17:39:29.784 [main] [INFO] [o.a.catalina.core.StandardService] - Starting service [Tomcat]
+2023-02-09 17:39:29.784 [main] [INFO] [o.a.catalina.core.StandardEngine] - Starting Servlet engine: [Apache Tomcat/9.0.55]
+2023-02-09 17:39:29.790 [main] [INFO] [o.a.c.c.C.[Tomcat-1].[localhost].[/]] - Initializing Spring embedded WebApplicationContext
+2023-02-09 17:39:29.790 [main] [INFO] [o.s.b.w.s.c.ServletWebServerApplicationContext] - Root WebApplicationContext: initialization completed in 31 ms
+2023-02-09 17:39:29.795 [main] [INFO] [o.s.b.a.e.web.EndpointLinksResolver] - Exposing 3 endpoint(s) beneath base path '/actuator'
+2023-02-09 17:39:29.858 [main] [INFO] [o.a.coyote.http11.Http11NioProtocol] - Starting ProtocolHandler ["http-nio-8081"]
+2023-02-09 17:39:29.859 [main] [INFO] [o.s.b.w.e.tomcat.TomcatWebServer] - Tomcat started on port(s): 8081 (http) with context path ''
+2023-02-09 17:39:29.866 [main] [INFO] [sh.radical.order.OrderApplication] - Started OrderApplication in 6.61 seconds (JVM running for 6.825)
+2023-02-09 17:40:25.157 [background-preinit] [INFO] [o.h.validator.internal.util.Version] - HV000001: Hibernate Validator 6.2.0.Final
+2023-02-09 17:40:25.160 [main] [INFO] [sh.radical.order.OrderApplication] - Starting OrderApplication using Java 17.0.5 on saiprasadsomanchis-MacBook-Pro.local with PID 72073 (/Users/saiprasadsomanchi/OrderService/build/classes/java/main started by saiprasadsomanchi in /Users/saiprasadsomanchi/OrderService)
+2023-02-09 17:40:25.160 [main] [INFO] [sh.radical.order.OrderApplication] - No active profile set, falling back to default profiles: default
+2023-02-09 17:40:25.529 [main] [INFO] [o.s.d.r.c.RepositoryConfigurationDelegate] - Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2023-02-09 17:40:25.552 [main] [INFO] [o.s.d.r.c.RepositoryConfigurationDelegate] - Finished Spring Data repository scanning in 21 ms. Found 1 MongoDB repository interfaces.
+2023-02-09 17:40:25.737 [main] [INFO] [o.s.b.w.e.tomcat.TomcatWebServer] - Tomcat initialized with port(s): 8080 (http)
+2023-02-09 17:40:25.742 [main] [INFO] [o.a.coyote.http11.Http11NioProtocol] - Initializing ProtocolHandler ["http-nio-8080"]
+2023-02-09 17:40:25.742 [main] [INFO] [o.a.catalina.core.StandardService] - Starting service [Tomcat]
+2023-02-09 17:40:25.742 [main] [INFO] [o.a.catalina.core.StandardEngine] - Starting Servlet engine: [Apache Tomcat/9.0.55]
+2023-02-09 17:40:25.780 [main] [INFO] [o.a.c.c.C.[Tomcat].[localhost].[/]] - Initializing Spring embedded WebApplicationContext
+2023-02-09 17:40:25.780 [main] [INFO] [o.s.b.w.s.c.ServletWebServerApplicationContext] - Root WebApplicationContext: initialization completed in 597 ms
+2023-02-09 17:40:25.910 [main] [INFO] [org.mongodb.driver.cluster] - Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms'}
+2023-02-09 17:40:26.004 [cluster-ClusterId{value='63e4e2b1f42bef483d7e6207', description='null'}-localhost:27017] [INFO] [org.mongodb.driver.connection] - Opened connection [connectionId{localValue:1, serverValue:48}] to localhost:27017
+2023-02-09 17:40:26.004 [cluster-rtt-ClusterId{value='63e4e2b1f42bef483d7e6207', description='null'}-localhost:27017] [INFO] [org.mongodb.driver.connection] - Opened connection [connectionId{localValue:2, serverValue:47}] to localhost:27017
+2023-02-09 17:40:26.004 [cluster-ClusterId{value='63e4e2b1f42bef483d7e6207', description='null'}-localhost:27017] [INFO] [org.mongodb.driver.cluster] - Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=17, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=32901167}
+2023-02-09 17:40:26.364 [main] [INFO] [o.a.coyote.http11.Http11NioProtocol] - Starting ProtocolHandler ["http-nio-8080"]
+2023-02-09 17:40:26.372 [main] [INFO] [o.s.b.w.e.tomcat.TomcatWebServer] - Tomcat started on port(s): 8080 (http) with context path ''
+2023-02-09 17:40:26.397 [main] [INFO] [o.s.b.w.e.tomcat.TomcatWebServer] - Tomcat initialized with port(s): 8081 (http)
+2023-02-09 17:40:26.397 [main] [INFO] [o.a.coyote.http11.Http11NioProtocol] - Initializing ProtocolHandler ["http-nio-8081"]
+2023-02-09 17:40:26.397 [main] [INFO] [o.a.catalina.core.StandardService] - Starting service [Tomcat]
+2023-02-09 17:40:26.397 [main] [INFO] [o.a.catalina.core.StandardEngine] - Starting Servlet engine: [Apache Tomcat/9.0.55]
+2023-02-09 17:40:26.404 [main] [INFO] [o.a.c.c.C.[Tomcat-1].[localhost].[/]] - Initializing Spring embedded WebApplicationContext
+2023-02-09 17:40:26.404 [main] [INFO] [o.s.b.w.s.c.ServletWebServerApplicationContext] - Root WebApplicationContext: initialization completed in 31 ms
+2023-02-09 17:40:26.409 [main] [INFO] [o.s.b.a.e.web.EndpointLinksResolver] - Exposing 3 endpoint(s) beneath base path '/actuator'
+2023-02-09 17:40:26.483 [main] [INFO] [o.a.coyote.http11.Http11NioProtocol] - Starting ProtocolHandler ["http-nio-8081"]
+2023-02-09 17:40:26.484 [main] [INFO] [o.s.b.w.e.tomcat.TomcatWebServer] - Tomcat started on port(s): 8081 (http) with context path ''
+2023-02-09 17:40:26.491 [main] [INFO] [sh.radical.order.OrderApplication] - Started OrderApplication in 6.593 seconds (JVM running for 6.748)
+2023-02-09 17:40:45.146 [http-nio-8080-exec-1] [INFO] [o.a.c.c.C.[Tomcat].[localhost].[/]] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-02-09 17:40:45.146 [http-nio-8080-exec-1] [INFO] [o.s.web.servlet.DispatcherServlet] - Initializing Servlet 'dispatcherServlet'
+2023-02-09 17:40:45.147 [http-nio-8080-exec-1] [INFO] [o.s.web.servlet.DispatcherServlet] - Completed initialization in 1 ms
+2023-02-09 17:40:45.389 [http-nio-8080-exec-5] [INFO] [o.s.api.AbstractOpenApiResource] - Init duration for springdoc-openapi is: 90 ms
+2023-02-09 17:41:01.239 [http-nio-8080-exec-6] [INFO] [s.r.o.c.OrderQueryController] - finding all orders with filters: name:eq:sai and sorBy: +name
+2023-02-09 17:41:01.240 [http-nio-8080-exec-6] [INFO] [s.r.order.services.OrderService] - inside findAll service method
+2023-02-09 17:41:01.361 [http-nio-8080-exec-6] [INFO] [org.mongodb.driver.connection] - Opened connection [connectionId{localValue:3, serverValue:49}] to localhost:27017

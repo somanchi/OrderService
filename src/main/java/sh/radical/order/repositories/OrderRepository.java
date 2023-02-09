@@ -7,5 +7,5 @@ import org.springframework.stereotype.Repository;
 import sh.radical.order.models.Order;
 
 @Repository
-public interface OrderRepository extends MongoRepository<Order, String>, QuerydslPredicateExecutor<Order> {
+public interface OrderRepository extends MongoRepository<Order, String>, QuerydslPredicateExecutor<Order>,OrderRepositoryCustom {
 }
