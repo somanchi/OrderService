@@ -1,5 +1,6 @@
 package sh.radical.order.utils;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Sort;
 import org.springframework.stereotype.Component;
 import sh.radical.order.entities.SearchQuery;
@@ -20,16 +21,21 @@ public class Parser {
 //         b. validate if the operation has enough attributes ex eq operation should have only one value but between operation needs 2 values
 //         c. validate if the operation is allowed on the type of the attribute
 
-    Constants constants = new Constants();
+
+    OperationConstants operationConstants = new OperationConstants();
+
+    @Autowired
+    Validation validation;
+
     public List<SearchQuery> getFilters(String filters) {
         List<SearchQuery> searchQueries = new ArrayList<>();
         Arrays.stream(filters.split(";")).forEach(filter -> {
             String[] filterParams = filter.split(":");
             String modelValue = filterParams[0];
-
             String op = filterParams[1];
             String values = filterParams[2];
-            searchQueries.add(new SearchQuery(modelValue, constants.operations.get(op.toUpperCase()),values));
+            validation.validateFilters(modelValue,op);
+            searchQueries.add(new SearchQuery(modelValue, operationConstants.operations.get(op.toUpperCase()),values));
         });
 
         return searchQueries;
@@ -41,6 +47,7 @@ public class Parser {
             if (it.charAt(0) == '+' || it.charAt(0) == '-') {
                 Sort.Direction direction = getSortOperation(it.charAt(0));
                 String sortObject = sort.substring(1);
+                validation.validateSort(sortObject);
                 sorts.add(new Sort.Order(direction,sortObject));
             }
             else {
