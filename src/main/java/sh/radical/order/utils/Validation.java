@@ -13,7 +13,7 @@ public class Validation {
 
     public void validateFilters(String modelValue, String operation) {
         List<String> errorMessages = new ArrayList<>();
-        List<String> allowedOperations = validationHelper.allowedFiltersForField.get(modelValue);
+        List<String> allowedOperations = validationHelper.allowedFilters.get("order").get(modelValue);
         if (allowedOperations != null) {
            boolean isFilterAllowed = allowedOperations.contains(operation.toUpperCase());
            if (! isFilterAllowed) {
@@ -31,7 +31,7 @@ public class Validation {
 
     public void validateSort (String sortOperation) {
         List<String> errorMessages = new ArrayList<>();
-        if (! validationHelper.allowedSort.contains(sortOperation)) {
+        if (! validationHelper.allowedSort.get("order").contains(sortOperation)) {
             errorMessages.add( sortOperation+ "is not allowed for sorting");
         }
         if (! errorMessages.isEmpty()) {

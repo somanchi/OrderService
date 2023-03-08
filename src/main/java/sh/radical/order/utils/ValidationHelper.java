@@ -11,12 +11,11 @@ import java.util.HashSet;
 @Component
 public class ValidationHelper {
 
-    Map<String, List<String>> allowedFiltersForField = new HashMap<>();
-    Set<String> allowedSort = new HashSet<>();
+    Map<String, Map<String,List<String>>> allowedFilters = new HashMap<>();
+   Map<String, Set<String>> allowedSort = new HashMap<>();
 
     public ValidationHelper() {
-        allowedFiltersForField.put("name", List.of("name","address") );
-        allowedSort.add("name");
-        allowedSort.add("address");
+        allowedFilters.put("order", Map.of("name", List.of("name","address")) );
+        allowedSort.put("order",Set.of("name","address"));
     }
 }
